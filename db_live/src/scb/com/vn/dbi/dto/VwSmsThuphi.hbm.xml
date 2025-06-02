@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 19, 2015 5:21:42 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="scb.com.vn.dbi.dto.VwSmsThuphi" table="VW_SMS_THUPHI" schema="SMS_SCB">
+        <id name="id" type="string">
+            <column name="ID" length="20" />
+            <generator class="assigned" />
+        </id>
+        <property name="custno" type="string">
+            <column name="CUSTNO" length="7" />
+        </property>
+        <property name="custname" type="string">
+            <column name="CUSTNAME" length="200" />
+        </property>
+        <property name="acctno" type="string">
+            <column name="ACCTNO" length="20" />
+        </property>
+        <property name="phoneno" type="string">
+            <column name="PHONENO" length="20" />
+        </property>
+        <property name="retry" type="java.lang.Integer">
+            <column name="RETRY" precision="6" scale="0" />
+        </property>
+        <property name="status" type="java.lang.Character">
+            <column name="STATUS" length="1" />
+        </property>
+        <property name="note" type="string">
+            <column name="NOTE" length="200" />
+        </property>
+        <property name="nophi" type="java.lang.Integer">
+            <column name="NOPHI" precision="6" scale="0" />
+        </property>
+        <property name="sendsms" type="java.lang.Character">
+            <column name="SENDSMS" length="1" />
+        </property>
+        <property name="thangnam" type="string">
+            <column name="THANGNAM" length="7" />
+        </property>
+        <property name="paydateFcubs" type="timestamp">
+            <column name="PAYDATE_FCUBS" length="7" />
+        </property>
+        <property name="datefail" type="timestamp">
+            <column name="DATEFAIL" length="7" />
+        </property>
+        <property name="feeamount" type="java.lang.Long">
+            <column name="FEEAMOUNT" precision="10" scale="0" />
+        </property>
+        <property name="refFcubs" type="string">
+            <column name="REF_FCUBS" length="100" />
+        </property>
+        <property name="branchCode" type="string">
+            <column name="BRANCH_CODE" length="3" />
+        </property>
+        <property name="thangnamretry" type="string">
+            <column name="THANGNAMRETRY" length="7" />
+        </property>
+        <property name="lockdate" type="timestamp">
+            <column name="LOCKDATE" length="7" />
+        </property>
+        <property name="lockstatus" type="java.lang.Character">
+            <column name="LOCKSTATUS" length="1" />
+        </property>
+    </class>
+</hibernate-mapping>

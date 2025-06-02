@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Dec 22, 2012 11:39:01 AM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="scb.com.vn.dbi.dto.PFIPartner" table="PFI_PARTNER" schema="SMS_SCB">
+        <id name="idpartner" type="string">
+            <column name="IDPARTNER" length="10" />
+            <generator class="assigned" />
+        </id>
+        <property name="name" type="string">
+            <column name="NAME" length="400" />
+        </property>
+        <property name="shortname" type="string">
+            <column name="SHORTNAME" length="30" />
+        </property>
+        <property name="partnertype" type="string">
+            <column name="PARTNER_TYPE" length="30" />
+        </property>
+        <property name="isactive" type="string">
+            <column name="ISACTIVE" length="1" />
+        </property>
+        <set name="siTrftToSIAuth" inverse="true">
+            <key>
+                <column name="IDPARTNER" length="10" not-null="true" />
+            </key>
+            <one-to-many class="scb.com.vn.dbi.dto.SITrftToSIAuth" />
+        </set>
+    </class>
+</hibernate-mapping>

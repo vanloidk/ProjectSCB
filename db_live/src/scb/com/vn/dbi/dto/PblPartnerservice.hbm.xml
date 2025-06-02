@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 4, 2013 6:01:02 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="scb.com.vn.dbi.dto.PblPartnerservice" table="PBL_PARTNERSERVICE" schema="SMS_SCB">
+        <composite-id name="id" class="scb.com.vn.dbi.dto.PblPartnerserviceId">
+            <key-property name="idpartner" type="string">
+                <column name="IDPARTNER" length="10" />
+            </key-property>
+            <key-property name="idservicetype" type="string">
+                <column name="IDSERVICETYPE" length="10" />
+            </key-property>
+            <key-property name="idprovider" type="string">
+                <column name="IDPROVIDER" length="20" />
+            </key-property>
+        </composite-id>
+        <many-to-one name="pblServicetype" class="scb.com.vn.dbi.dto.PblServicetype" update="false" insert="false" fetch="select">
+            <column name="IDSERVICETYPE" length="10" not-null="true" />
+        </many-to-one>
+        <many-to-one name="pblProvider" class="scb.com.vn.dbi.dto.PblProvider" update="false" insert="false" fetch="select">
+            <column name="IDPROVIDER" length="20" not-null="true" />
+        </many-to-one>
+        <many-to-one name="pblPartner" class="scb.com.vn.dbi.dto.PblPartner" update="false" insert="false" fetch="select">
+            <column name="IDPARTNER" length="10" not-null="true" />
+        </many-to-one>
+        <property name="accnofcubs" type="string">
+            <column name="ACCNOFCUBS" length="20" />
+        </property>
+        <property name="accnopartner" type="string">
+            <column name="ACCNOPARTNER" length="20" />
+        </property>
+        <property name="priority" type="big_decimal">
+            <column name="PRIORITY" precision="22" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

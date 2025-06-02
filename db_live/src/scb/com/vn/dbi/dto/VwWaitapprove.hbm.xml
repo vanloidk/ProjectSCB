@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 3, 2013 5:01:33 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="scb.com.vn.dbi.dto.VwWaitapprove" table="VW_WAITAPPROVE" schema="SMS_SCB" mutable="false">
+        <composite-id name="id" class="scb.com.vn.dbi.dto.VwWaitapproveId">
+            <key-property name="txncode" type="string">
+                <column name="TXNCODE" length="3" />
+            </key-property>
+            <key-property name="id" type="string">
+                <column name="ID"  length="30"/>
+            </key-property>
+        </composite-id>
+        <property name="txnname" type="string">
+            <column name="TXNNAME" />
+        </property>
+        <property name="customercode" type="string">
+            <column name="CUSTOMERCODE" length="30" />
+        </property>
+        <property name="custAccNo" type="string">
+            <column name="CUST_ACC_NO" length="30" />
+        </property>
+        <property name="custAccName" type="string">
+            <column name="CUST_ACC_NAME" length="150" />
+        </property>
+        <property name="active" type="string">
+            <column name="ACTIVE" length="1" />
+        </property>       
+        <property name="idchanneluserInit" type="string">
+            <column name="IDCHANNELUSER_INIT" length="20" />
+        </property>
+        <property name="dateInit" type="timestamp">
+            <column name="DATE_INIT" length="19" />
+        </property>
+        <property name="branchCodeInit" type="string">
+            <column name="BRANCH_CODE_INIT" length="3" />
+        </property>      
+    </class>
+</hibernate-mapping>

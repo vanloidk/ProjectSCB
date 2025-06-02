@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 28, 2013 9:05:20 AM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="scb.com.vn.dbi.dto.VwAutoregToPay" table="VW_AUTOREG_TO_PAY" schema="SMS_SCB">                              
+        <composite-id name="id" class="scb.com.vn.dbi.dto.VwAutoregToPayId">
+            <key-property name="idcontract" type="string">
+                <column name="IDCONTRACT" length="8" />
+            </key-property>
+            <key-property name="custAccNo" type="string">
+                <column name="CUST_ACC_NO" length="30" />
+            </key-property>
+            <key-property name="idservicetype" type="string">
+                <column name="IDSERVICETYPE" length="20" />
+            </key-property>
+            <key-property name="idprovider" type="string">
+                <column name="IDPROVIDER" length="20" />
+            </key-property>
+            <key-property name="customercode" type="string">
+                <column name="CUSTOMERCODE" length="30" />
+            </key-property>
+        </composite-id>         
+        <property name="scheduletype" type="java.lang.Boolean">
+            <column name="SCHEDULETYPE" precision="1" scale="0" />
+        </property>
+        <property name="daysinmonth" type="string">
+            <column name="DAYSINMONTH" length="150" />
+        </property>
+        <property name="havesms" type="java.lang.Character">
+            <column name="HAVESMS" length="1" />
+        </property>
+        <property name="mobile" type="string">
+            <column name="MOBILE" length="20" />
+        </property>
+        <property name="numattempFail" type="big_decimal">
+            <column name="NUMATTEMP_FAIL" precision="22" scale="0" />
+        </property>
+        <property name="sentsms" type="string">
+            <column name="SENTSMS" length="1" />
+        </property>
+        <property name="dateFail" type="date">
+            <column name="DATE_FAIL" length="7" />
+        </property>
+        <property name="accnofcubs" type="string">
+            <column name="ACCNOFCUBS" length="20" />
+        </property>    
+        <property name="branchcode" type="string">
+            <column name="BRANCHCODE" length="3" />
+        </property>    
+        <property name="paymenttype" type="string">
+            <column name="PAYMENT_TYPE" length="1" />
+        </property>    
+    </class>
+</hibernate-mapping>

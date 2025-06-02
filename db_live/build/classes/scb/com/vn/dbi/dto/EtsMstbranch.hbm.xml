@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 25, 2013 1:47:54 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="scb.com.vn.dbi.dto.EtsMstbranch" table="ETS_MSTBRANCH" schema="SMS_SCB">
+        <id name="code" type="string">
+            <column name="CODE" length="3" />
+            <generator class="assigned" />
+        </id>
+        <property name="name" type="string">
+            <column name="NAME" length="150" />
+        </property>
+        <property name="address" type="string">
+            <column name="ADDRESS" length="250" />
+        </property>
+        <property name="phone" type="string">
+            <column name="PHONE" length="50" />
+        </property>
+        <property name="fax" type="string">
+            <column name="FAX" length="50" />
+        </property>
+        <property name="representer" type="string">
+            <column name="REPRESENTER" length="150">
+                <comment>Nguoi dai dien</comment>
+            </column>
+        </property>
+        <property name="representerPos" type="string">
+            <column name="REPRESENTER_POS" length="150">
+                <comment>Nguoi dai dien-chuc vu</comment>
+            </column>
+        </property>
+        <property name="pageauthNo" type="string">
+            <column name="PAGEAUTH_NO" length="150" />
+        </property>
+        <property name="pageauthDate" type="string">
+            <column name="PAGEAUTH_DATE" length="150" />
+        </property>
+    </class>
+</hibernate-mapping>

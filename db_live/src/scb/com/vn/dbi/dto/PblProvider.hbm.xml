@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Dec 22, 2012 11:39:01 AM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="scb.com.vn.dbi.dto.PblProvider" table="PBL_PROVIDER" schema="SMS_SCB">
+        <id name="idprovider" type="string">
+            <column name="IDPROVIDER" length="20" />
+            <generator class="assigned" />
+        </id>
+        <property name="providername" type="string">
+            <column name="PROVIDERNAME" length="200" />
+        </property>
+        <!--
+        <set name="pblAutoRegs" inverse="true">
+            <key>
+                <column name="IDPROVIDER" length="20" not-null="true" />
+            </key>
+            <one-to-many class="scb.com.vn.dbi.dto.PblAutoReg" />
+        </set>
+        -->
+        <!--
+        <set name="pblPartnerservices" inverse="true">
+            <key>
+                <column name="IDPROVIDER" length="20" not-null="true" />
+            </key>
+            <one-to-many class="scb.com.vn.dbi.dto.PblPartnerservice" />
+        </set>        
+        -->
+    </class>
+</hibernate-mapping>

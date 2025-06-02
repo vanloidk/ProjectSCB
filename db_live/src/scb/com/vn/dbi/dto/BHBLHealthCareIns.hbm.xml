@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 25, 2013 10:12:57 AM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="scb.com.vn.dbi.dto.BHBLHealthCareIns" schema="SMS_SCB" table="BHBL_CUSTOMER_CONTRACT">
+        <id name="Id" type="java.lang.Long">
+            <column name="ID" precision="9" scale="0"/>
+            <generator class="sequence">
+                <param name="sequence">SQ_BHBL_HEALTHCARE_INS</param>
+            </generator>
+        </id>
+        <property name="FullName01" type="string">
+            <column length="256" name="FULLNAME_1"/>
+        </property>
+        <property name="BirthDay01" type="string">
+            <column length="16" name="BIRTHDAY_1"/>
+        </property>
+        <property name="IndenCard01" type="string">
+            <column length="32" name="IDENCARD_1"/>
+        </property>
+        <property name="Address01" type="string">
+            <column length="256" name="ADDRESS_1"/>
+        </property>
+        <property name="Email01" type="string">
+            <column length="128" name="EMAIL_1"/>
+        </property>
+        <property name="Phone01" type="string">
+            <column length="16" name="PHONE_1"/>
+        </property>
+        <property name="FullName02" type="string">
+            <column length="256" name="FULLNAME_2"/>
+        </property>
+        <property name="BirthDay02" type="string">
+            <column length="16" name="BIRTHDAY_2"/>
+        </property>
+        <property name="Indencart02" type="string">
+            <column length="32" name="IDENCARD_2"/>
+        </property>
+        <property name="Address02" type="string">
+            <column length="256" name="ADDRESS_2"/>
+        </property>
+        <property name="email02" type="string">
+            <column length="128" name="EMAIL_2"/>
+        </property>
+        <property name="Phone02" type="string">
+            <column length="16" name="PHONE_2"/>
+        </property>
+        <property name="RelationBuyer" type="string">
+            <column length="128" name="RELATION_BUYER"/>
+        </property>
+        <property name="EffDate" type="string">
+            <column length="16" name="EFFDATE"/>
+        </property>
+        <property name="InsType" type="string">
+            <column length="15" name="INSURANCE_TYPE">
+                <comment>BAOHIEMSUCKHOE</comment>
+            </column>
+        </property>
+        <property name="CreatedDate" type="timestamp">
+            <column length="15" name="CREATED_DATE"/>
+        </property>
+        <property name="UpdatedDate" type="timestamp">
+            <column length="15" name="UPDATED_DATE"/>
+        </property>
+        <property name="RefFcubs" type="string">
+            <column length="50" name="REF_FCUBS"/>
+        </property>
+        <property name="RefNum" type="string">
+            <column length="20" name="REF_NUM"/>
+        </property>
+        <property name="Status" type="string">
+            <column length="4" name="STATUS">
+                <comment>00:TC, 01:timeout</comment>
+            </column>
+        </property>
+        <property name="PackageIns" type="int">
+            <column length="4" name="PACKAGE_INS"/>
+        </property>
+        <property name="RelationInsBuyer" type="string">
+            <column length="15" name="RELATION_INS_BUYER"/>
+        </property>
+        <property name="FullName03" type="string">
+            <column length="256" name="FULLNAME3"/>
+        </property>
+        <property name="BirthDay03" type="string">
+            <column length="16" name="BIRTHDAY_3"/>
+        </property>
+        <property name="IndenCard03" type="string">
+            <column length="32" name="INDENCARD_3"/>
+        </property>
+        <property name="Address03" type="string">
+            <column length="256" name="ADDRESS_3"/>
+        </property>
+        <property name="Email03" type="string">
+            <column length="128" name="EMAIL_3"/>
+        </property>
+        <property name="Phone03" type="string">
+            <column length="16" name="PHONE_3"/>
+        </property>
+        <property name="ChannelReg" type="string">
+            <column length="10" name="CHANNEL_REG">
+                <comment>MB, IB</comment>
+            </column>
+        </property>
+        <property name="IdPartner" type="string">
+            <column length="15" name="IDPARTNER">
+                <comment>BAO LONG</comment>
+            </column>
+        </property>
+        <property name="PaymentMethod" type="string">
+            <column length="15" name="PAYMENT_METHOD">
+                <comment>THE, TAIKHOAN</comment>
+            </column>
+        </property>
+        <property name="OutpatientAmount" type="java.math.BigDecimal">
+            <column name="OUTPATIENT_AMOUNT" precision="10" scale="2"/>
+        </property>
+        <property name="AccidentAmount" type="java.math.BigDecimal">
+            <column name="ACCIDENT_AMOUNT" precision="10" scale="2"/>
+        </property>
+        <property name="HumanLifeAmount" type="java.math.BigDecimal">
+            <column name="HUMAN_LIFE_AMOUNT" precision="10" scale="2"/>
+        </property>
+        <property name="DentalAmount" type="java.math.BigDecimal">
+            <column name="DENTAL_AMOUNT" precision="10" scale="2"/>
+        </property>
+        <property name="MaternityAmount" type="java.math.BigDecimal">
+            <column name="MATERNITY_AMOUNT" precision="10" scale="2"/>
+        </property>
+        <property name="TotalCost" type="java.math.BigDecimal">
+            <column name="TOTAL_COST" precision="10" scale="2"/>
+        </property>
+        <property name="InpatientAmount" type="java.math.BigDecimal">
+            <column name="INPATIENT_AMOUNT" precision="10" scale="2"/>
+        </property>
+        <property name="PackageExtraCost" type="java.math.BigDecimal">
+            <column name="PACKAGE_EXTRA_COST" precision="10" scale="2"/>
+        </property>
+        <property name="InsDuration" type="java.lang.Float">
+            <column name="INS_DURATION" precision="10" scale="0"/>
+        </property>
+        <property name="DateMaker" type="timestamp">
+            <column length="15" name="DATE_MAKER"/>
+        </property>
+        <property name="DateChecker" type="timestamp">
+            <column length="15" name="DATE_CHECKER"/>
+        </property>
+        <property name="TransDate" type="timestamp">
+            <column length="15" name="TRANSDATE"/>
+        </property>
+        <property name="PayDateFCUBS" type="timestamp">
+            <column length="15" name="PAYDATE_FCUBS"/>
+        </property>
+        <property name="IdUserMaker" type="string">
+            <column length="50" name="IDUSER_MAKER"/>
+        </property>
+        <property name="IdUserChecker" type="string">
+            <column length="50" name="IDUSER_CHECKER"/>
+        </property>
+        <property name="BranchCode" type="string">
+            <column length="3" name="BRANCHCODE"/>
+        </property>
+        <property name="FromAccount" type="string">
+            <column length="50" name="FROM_ACCOUNT"/>
+        </property>
+        <property name="ToAccount" type="string">
+            <column length="50" name="TO_ACCOUNT"/>
+        </property>
+        <property name="ParentContractType" type="string">
+            <column length="2" name="PARENT_CONTRACT_TYPE"/>
+        </property>
+        <property name="IdContractFollow" type="string">
+            <column length="20" name="ID_CONTRACT_FOLLOW"/>
+        </property>
+        <property name="IdContractPartner" type="string">
+            <column length="20" name="ID_CONTRACT_PARTNER"/>
+        </property>
+        <property name="AgeRegister" type="int">
+            <column length="5" name="AGE_REGISTER"/>
+        </property>
+        <property name="AgePeopleRelationShip" type="int">
+            <column length="5" name="AGE_PEOPLE_RELATIONHIP"/>
+        </property>
+    
+        <property name="Gender" type="string">
+            <column length="8" name="GENDER"/>
+        </property>
+        <property name="Career" type="string">
+            <column length="30" name="CAREER"/>
+        </property>
+    
+        <property name="BuyerRegister" type="string">
+            <column length="2" name="BUYER_REGISTER"/>
+        </property>
+        
+        <property name="PInpatientAmount" type="java.math.BigDecimal">
+            <column name="P_INPATIENT_AMOUNT" precision="10" scale="2"/>
+        </property>
+        <property name="POutPatientAmount" type="java.math.BigDecimal">
+            <column name="P_OUTPATIENT_AMOUNT" precision="10" scale="2"/>
+        </property>  
+        <property name="PAccidentAmount" type="java.math.BigDecimal">
+            <column name="P_ACCIDENT_AMOUNT" precision="10" scale="2"/>
+        </property>
+        <property name="PHumanLifeAmount" type="java.math.BigDecimal">
+            <column name="P_HUMAN_LIFE_AMOUNT" precision="10" scale="2"/>
+        </property>
+        <property name="PDentalAmount" type="java.math.BigDecimal">
+            <column name="P_DENTAL_AMOUNT" precision="10" scale="2"/>
+        </property>
+    
+        <property name="PMaternityAmount" type="java.math.BigDecimal">
+            <column name="P_MATERNITY_AMOUNT" precision="10" scale="2"/>
+        </property>
+    
+        <property name="PEffDate" type="string">
+            <column name="P_EFFDATE" length="16"/>
+        </property>
+        <property name="PInsDuration" type="int">
+            <column name="P_INS_DURATION" length="5" />
+        </property>
+    
+        <property name="paymentCode" type="int">
+            <column name="PAYMENT_CODE" length="4" />
+        </property>
+    
+    
+    </class>
+  
+</hibernate-mapping>

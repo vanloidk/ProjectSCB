@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 8, 2015 7:51:18 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="scb.com.vn.dbi.dto.VwMbCustomer" table="VW_MB_CUSTOMER" schema="SMS_SCB">
+        <id name="customerNo" type="string">
+            <column name="CUSTOMER_NO" length="20" />
+            <generator class="assigned" />
+        </id>
+        <property name="cusName" type="string">
+            <column name="CUS_NAME" length="400" not-null="true" />
+        </property>
+        <property name="cusAddr" type="string">
+            <column name="CUS_ADDR" length="400" />
+        </property>
+        <property name="cusTel" type="string">
+            <column name="CUS_TEL" length="50" />
+        </property>
+    </class>
+</hibernate-mapping>

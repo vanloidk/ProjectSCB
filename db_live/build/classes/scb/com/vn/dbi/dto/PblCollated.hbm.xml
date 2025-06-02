@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 17, 2013 12:34:46 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="scb.com.vn.dbi.dto.PblCollated" table="PBL_COLLATED" schema="SMS_SCB">
+        <id name="id" type="int">
+            <column name="ID" precision="9" scale="0" />
+            <generator class="sequence">
+                <param name="sequence">SQ_PBL_COLLATED</param>
+            </generator>
+        </id>
+        <property name="idpartner" type="string">
+            <column name="IDPARTNER" length="20" />
+        </property>
+        <property name="data" type="string">
+            <column name="DATA" length="250" />
+        </property>
+        <property name="custAccNo" type="string">
+            <column name="CUST_ACC_NO" length="30" />
+        </property>
+        <property name="totalamount" type="string">
+            <column name="TOTALAMOUNT" length="30" />
+        </property>
+        <property name="tracecode" type="string">
+            <column name="TRACECODE" length="30" />
+        </property>
+        <property name="respcode" type="string">
+            <column name="RESPCODE" length="2" />
+        </property>
+        <property name="adtdata" type="string">
+            <column name="ADTDATA" length="100" />
+        </property>
+        <property name="insdate" type="timestamp">
+            <column name="INSDATE" length="19" />
+        </property>
+        <property name="processedpartner" type="string">
+            <column name="PROCESSEDPARTNER" length="200" />
+        </property>
+        <property name="processedbank" type="string">
+            <column name="PROCESSEDBANK" length="200" />
+        </property>
+    </class>
+</hibernate-mapping>

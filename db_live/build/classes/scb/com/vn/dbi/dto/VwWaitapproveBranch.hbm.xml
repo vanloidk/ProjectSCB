@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Dec 15, 2012 11:11:01 AM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="scb.com.vn.dbi.dto.VwWaitapproveBranch" table="VW_WAITAPPROVE_BRANCH" schema="SMS_SCB">
+        <id name="txncode" type="string">
+            <column length="3" name="TXNCODE" />
+            <generator class="assigned" />
+        </id>
+        <property name="txnname" type="string">
+            <column name="TXNNAME" />
+        </property>
+        <property name="counttxncode" type="big_decimal">
+            <column name="COUNTTXNCODE" precision="22" scale="0" />
+        </property>
+        <property name="branchCodeInit" type="string">
+            <column name="BRANCH_CODE_INIT" length="3" />
+        </property>
+    </class>
+</hibernate-mapping>

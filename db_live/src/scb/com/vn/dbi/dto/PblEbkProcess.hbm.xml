@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 26, 2013 2:27:48 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="scb.com.vn.dbi.dto.PblEbkProcess" table="PBL_EBK_PROCESS" schema="SMS_SCB">
+        <id name="transcode" type="int">
+            <column name="TRANSCODE" precision="9" scale="0" />
+                 <generator class="sequence">
+                <param name="sequence">SQ_EBK_PROCESS</param>
+            </generator>
+        </id>
+        <property name="idusr" type="string">
+            <column name="IDUSR" length="30" />
+        </property>
+        <property name="custAccNo" type="string">
+            <column name="CUST_ACC_NO" length="30" />
+        </property>
+        <property name="idpartner" type="string">
+            <column name="IDPARTNER" length="30" />
+        </property>
+        <property name="idservicetype" type="string">
+            <column name="IDSERVICETYPE" length="30" />
+        </property>
+        <property name="idprovider" type="string">
+            <column name="IDPROVIDER" length="30" />
+        </property>
+        <property name="customercode" type="string">
+            <column name="CUSTOMERCODE" length="30" />
+        </property>
+        <property name="amount" type="string">
+            <column name="AMOUNT" length="9" />
+        </property>
+        <property name="otptype" type="string">
+            <column name="OTPTYPE" length="5">
+                <comment>sms ; token</comment>
+            </column>
+        </property>
+        <property name="otp" type="string">
+            <column name="OTP" length="30">
+                <comment>mat ma de so khop SMS hoac token</comment>
+            </column>
+        </property>
+        <property name="idscreen" type="string">
+            <column name="IDSCREEN" length="1" />
+        </property>
+        <property name="idkey" type="string">
+            <column name="IDKEY" length="200" not-null="true" unique="true" />
+        </property>
+        <property name="status" type="string">
+            <column name="STATUS" length="1" />
+        </property>
+        <property name="txnDate" type="timestamp">
+            <column name="TXN_DATE" length="19" />
+        </property>
+        <property name="refBillpaid" type="string">
+            <column name="REF_BILLPAID" length="100" />
+        </property>
+    </class>
+</hibernate-mapping>

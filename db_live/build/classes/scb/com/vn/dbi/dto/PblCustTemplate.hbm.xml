@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 22, 2013 2:57:37 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="scb.com.vn.dbi.dto.PblCustTemplate" table="PBL_CUST_TEMPLATE" schema="SMS_SCB">
+        <id name="id" type="int">
+            <column name="ID" precision="9" scale="0" />
+            <generator class="sequence">
+                <param name="sequence">SQ_CUST_TEMPLATE</param>
+            </generator>
+        </id>
+        <property name="tepmName" type="string">
+            <column name="TEPM_NAME" length="1500" />
+        </property>
+        <property name="partnerCode" type="string">
+            <column name="PARTNER_CODE" length="20" />
+        </property>
+        <property name="idservicetype" type="string">
+            <column name="IDSERVICETYPE" length="20" />
+        </property>
+        <property name="idprovider" type="string">
+            <column name="IDPROVIDER" length="20" />
+        </property>
+        <property name="customercode" type="string">
+            <column name="CUSTOMERCODE" length="50" />
+        </property>
+        <property name="custAcctNo" type="string">
+            <column name="CUST_ACCT_NO" length="50" />
+        </property>
+        <property name="servicetypeName" type="string">
+            <column name="SERVICETYPE_NAME" length="1500" />
+        </property>
+        <property name="providerName" type="string">
+            <column name="PROVIDER_NAME" length="1500" />
+        </property>
+        <property name="iduser" type="string">
+            <column name="IDUSER" length="20" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 6, 2019 9:20:28 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="scb.com.vn.dbi.dto.GwTdLucky" table="GW_TD_LUCKY" schema="SMS_SCB" optimistic-lock="version">
+        <id name="custAcNo" type="string">
+            <column name="CUST_AC_NO" length="20" />            
+        </id>
+        <property name="customerNo" type="string">
+            <column name="CUSTOMER_NO" length="9" not-null="true" />
+        </property>
+                
+        <property name="createdDate" type="timestamp">
+            <column name="CREATED_DATE" />
+        </property>      
+        <property name="srcchannel" type="string">
+            <column name="SRCCHANNEL" length="2" />
+        </property>
+          <property name="status" type="string">
+            <column name="STATUS" length="10" />
+        </property>
+      
+         <property name="accountClass" type="string">
+            <column name="ACCOUNT_CLASS" length="6" />
+        </property>
+         <property name="tdAmount" type="java.lang.Long">
+            <column name="TDAMOUNT" precision="10" scale="0"  />
+        </property>
+        
+        <property name="dataStr" type="string">
+            <column name="DATASTR" length="1000"  />
+        </property>
+        
+    </class>
+</hibernate-mapping>

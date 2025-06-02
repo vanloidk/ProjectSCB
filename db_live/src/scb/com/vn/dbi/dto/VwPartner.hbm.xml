@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 5, 2013 3:49:37 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="scb.com.vn.dbi.dto.VwPartner" table="VW_PARTNER" schema="SMS_SCB">
+        <composite-id name="id" class="scb.com.vn.dbi.dto.VwPartnerId">
+            <key-property name="idpartner" type="string">
+                <column name="IDPARTNER" length="50" />
+            </key-property>
+            <key-property name="idservicetype" type="string">
+                <column name="IDSERVICETYPE" length="50" />
+            </key-property>
+            <key-property name="idprovider" type="string">
+                <column name="IDPROVIDER" length="50" />
+            </key-property>
+        </composite-id>
+        <property name="accnofcubs" type="string">
+            <column name="ACCNOFCUBS" length="250" />
+        </property>
+        <property name="accnopartner" type="string">
+            <column name="ACCNOPARTNER" length="150" />
+        </property>
+        <property name="priority" type="big_decimal">
+            <column name="PRIORITY" precision="22" scale="0" />
+        </property>
+        <property name="providername" type="string">
+            <column name="PROVIDERNAME" length="500" />
+        </property>
+    </class>
+</hibernate-mapping>

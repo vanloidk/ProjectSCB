@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 18, 2013 2:04:58 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="scb.com.vn.dbi.dto.SmsSender" table="SMS_SENDER" schema="SMS_SCB">
+        <id name="idmessage" type="int">
+            <column name="IDMESSAGE" precision="9" scale="0" />
+          <generator class="sequence">
+                <param name="sequence">SEQ_SMS_SENDER</param>
+            </generator>
+        </id>
+        <property name="idalert" type="string">
+            <column name="IDALERT" length="50" />
+        </property>
+        <property name="mobile" type="string">
+            <column name="MOBILE" length="30" />
+        </property>
+        <property name="message" type="string">
+            <column name="MESSAGE" length="160" />
+        </property>
+        <property name="messagestat" type="java.lang.Character">
+            <column name="MESSAGESTAT" length="1" />
+        </property>
+        <property name="idpartner" type="string">
+            <column name="IDPARTNER" length="50">
+                <comment>Kh&#244;ng c?n insert d? li?u n&#224;y</comment>
+            </column>
+        </property>
+        <property name="idprovider" type="string">
+            <column name="IDPROVIDER" length="50">
+                <comment>Kh&#244;ng c?n insert d? li?u n&#224;y</comment>
+            </column>
+        </property>
+        <property name="nbrRetry" type="long">
+            <column name="NBR_RETRY" precision="10" scale="0" />
+        </property>
+        <property name="senddate" type="date">
+            <column name="SENDDATE" length="7" />
+        </property>
+        <property name="serviceType" type="string">
+            <column name="SERVICE_TYPE" length="50">
+                <comment>Lo?i d?ch v?</comment>
+            </column>
+        </property>
+        <property name="serviceCode" type="string">
+            <column name="SERVICE_CODE" length="50">
+                <comment>M&#227; d?ch v?</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

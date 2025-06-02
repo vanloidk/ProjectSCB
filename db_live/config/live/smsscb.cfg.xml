@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</property>
+        <property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+        <property name="hibernate.connection.url">jdbc:oracle:thin:@192.168.44.1:1521/ebankgw</property>
+        <property name="hibernate.connection.username">sms_scb</property>
+        <property name="hibernate.connection.password">2m22c8</property>
+        <property name="hibernate.connection.pool_size">20</property>        
+        <property name="hibernate.transaction.flush_before_completion">true</property>
+        <property name="hibernate.transaction.auto_close_session">true</property>
+        
+        <property name="hibernate.c3p0.min_size">2</property>        
+        <property name="hibernate.c3p0.max_size">20</property>
+        <property name="hibernate.c3p0.timeout">20</property>
+        <property name="hibernate.c3p0.max_statements">100</property>
+        <property name="hibernate.c3p0.idle_test_period">300</property>
+        <property name="hibernate.c3p0.acquire_increment">2</property>
+        <property name="hibernate.c3p0.validate">false</property>
+        <property name="hibernate.c3p0.preferred_test_query">select 1 from dual</property>
+        <property name="hibernate.c3p0.acquireRetryAttempts">30</property>
+        <property name="hibernate.c3p0.acquireRetryDelay">1000</property>
+        <property name="hibernate.c3p0.breakAfterAcquireFailure">false</property>
+
+        <mapping resource="scb/com/vn/dbi/dto/PblAutoRegContract.hbm.xml"/>
+        <mapping resource="scb/com/vn/dbi/dto/PblAutoReg.hbm.xml"/>
+        <mapping resource="scb/com/vn/dbi/dto/PblProvider.hbm.xml"/>
+        <mapping resource="scb/com/vn/dbi/dto/PblServicetype.hbm.xml"/>
+        <mapping resource="scb/com/vn/dbi/dto/PblPartnerservice.hbm.xml"/>
+        <mapping resource="scb/com/vn/dbi/dto/PblPartner.hbm.xml"/>
+        <mapping resource="scb/com/vn/dbi/dto/VwCustAccount.hbm.xml"/>
+        <mapping resource="scb/com/vn/dbi/dto/VwWaitapprove.hbm.xml"/>
+        <mapping resource="scb/com/vn/dbi/dto/VwWaitapproveBranch.hbm.xml"/>
+        <mapping resource="scb/com/vn/dbi/dto/PblBillpaid.hbm.xml"/>
+        <mapping resource="scb/com/vn/dbi/dto/VwAutoReg.hbm.xml"/>
+        <mapping resource="scb/com/vn/dbi/dto/VwUserbranch.hbm.xml"/>
+        <mapping resource="scb/com/vn/dbi/dto/PblCollated.hbm.xml"/>
+        <mapping resource="scb/com/vn/dbi/dto/PblLog.hbm.xml"/>
+        <mapping resource="scb/com/vn/dbi/dto/BPblAutoReg.hbm.xml"/>
+        <mapping resource="scb/com/vn/dbi/dto/BPblAutoRegContract.hbm.xml"/>
+        <mapping resource="scb/com/vn/dbi/dto/PblAutoRegHistory.hbm.xml"/>
+        <mapping resource="scb/com/vn/dbi/dto/EtsMstbranch.hbm.xml"/>
+        <mapping resource="scb/com/vn/dbi/dto/VwAutoregToPay.hbm.xml"/>
+        <mapping resource="scb/com/vn/dbi/dto/PblAutoregFail.hbm.xml"/>
+
+
+        <!-- BEGIN EBANKING -->                        
+        <mapping resource="scb/com/vn/dbi/dto/PblEbkProcess.hbm.xml"/>
+        <mapping resource="scb/com/vn/dbi/dto/PblEbkScreen.hbm.xml"/>
+        <mapping resource="scb/com/vn/dbi/dto/VwMstchanneluser.hbm.xml"/>                        
+        <mapping resource="scb/com/vn/dbi/dto/PblCustTemplate.hbm.xml"/>       
+        <!-- END EBANKING -->
+
+	<!-- SMS SENDER VIETTEL-->
+	 <mapping resource="scb/com/vn/dbi/dto/SmsPartner.hbm.xml"/>
+        <mapping resource="scb/com/vn/dbi/dto/SmsSender.hbm.xml"/>
+        <!-- END EBANKING -->
+
+
+    </session-factory>
+</hibernate-configuration>

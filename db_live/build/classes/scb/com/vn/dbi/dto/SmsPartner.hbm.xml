@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 26, 2013 4:10:16 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="scb.com.vn.dbi.dto.SmsPartner" table="SMS_PARTNER" schema="SMS_SCB">
+        <id name="idpartner" type="string">
+            <column name="IDPARTNER" length="50" />
+            <generator class="assigned" />
+        </id>
+        <property name="partnercode" type="string">
+            <column name="PARTNERCODE" length="50" />
+        </property>
+        <property name="partnername" type="string">
+            <column name="PARTNERNAME" length="1500" />
+        </property>
+        <property name="retryNoMax" type="long">
+            <column name="RETRY_NO_MAX" precision="10" scale="0" />
+        </property>
+        <property name="retried" type="long">
+            <column name="RETRIED" precision="10" scale="0" />
+        </property>
+        <property name="phonecontact" type="string">
+            <column name="PHONECONTACT" length="50">
+                <comment>SO DIEN THOAI GOI SMS THONG BAO NEU CO XAY RA SU CO ...</comment>
+            </column>
+        </property>
+        <property name="status" type="string">
+            <column name="STATUS" length="1" />
+        </property>
+    </class>
+</hibernate-mapping>

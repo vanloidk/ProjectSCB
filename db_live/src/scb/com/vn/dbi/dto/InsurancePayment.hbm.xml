@@ -1,0 +1,150 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 25, 2013 10:12:57 AM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="scb.com.vn.dbi.dto.InsurancePayment" table="INSURANCE_PAYMENT" schema="SMS_SCB">
+        <id name="idinsurancepayment" type="int">
+            <column name="IDINSURANCEPAYMENT" precision="9" scale="0" />
+            <generator class="sequence">
+                <param name="sequence">SQ_INSURANCE_PAYMENT</param>
+            </generator>
+        </id>
+        <property name="idbcbill" type="int">
+            <column name="IDBCBILL" length="20" not-null="false" />
+        </property>
+        <property name="idpartner" type="string">
+            <column name="IDPARTNER" length="10" />
+        </property>
+        <property name="ownername" type="string">
+            <column name="OWNER_NAME" length="40" not-null="true" />
+        </property>
+        <property name="ownerid" type="string">
+            <column name="OWNER_ID" length="20"/>
+        </property>
+        <property name="duedt" type="string">
+            <column name="DUE_DT" length="10" />
+        </property>
+        <property name="iduserMaker" type="string">
+            <column name="IDUSER_MAKER" length="10" />
+        </property>
+        <property name="idchanneluserMaker" type="string">
+            <column name="IDCHANNELUSER_MAKER" length="10" />
+        </property>
+        <property name="insdateMaker" type="timestamp">
+            <column name="INSDATE_MAKER" length="19"/>
+        </property>
+        <property name="iduserChecker" type="string">
+            <column name="IDUSER_CHECKER" length="10" />
+        </property>
+        <property name="idchanneluserChecker" type="string">
+            <column name="IDCHANNELUSER_CHECKER" length="10" />
+        </property>
+        <property name="insdateChecker" type="timestamp">
+            <column name="INSDATE_CHECKER" length="19"/>
+        </property>
+        <property name="idchannel" type="string">
+            <column name="IDCHANNEL" length="10" />
+        </property>
+        <property name="usertype" type="string">
+            <column name="USERTYPE" length="10" />
+        </property>
+        <property name="refPartner" type="string">
+            <column name="REF_PARTNER" length="10" />
+        </property>
+        <property name="refFcubs" type="string">
+            <column name="REF_FCUBS" length="10" />
+        </property>
+        <property name="totalamount" type="java.lang.Long">
+            <column name="TOTALAMOUNT" precision="20" scale="0"  not-null="false" />
+        </property>
+        <property name="paymentmethod" type="int">
+            <column name="PAYMENTMETHOD" precision="6" scale="0">
+                <comment>1: Tien mat. 2: Tu TK cua KH; 3: Tu TK cua Ngan hang</comment>
+            </column>
+        </property>
+        <property name="acccust" type="string">
+            <column name="ACC_CUST" length="20" />
+        </property>
+        <property name="accIdaccount" type="string">
+            <column name="ACC_IDACCOUNT" length="20" />
+        </property>
+        <property name="accHoldername" type="string">
+            <column name="ACC_HOLDERNAME" length="200" />
+        </property>
+        <property name="accAddress" type="string">
+            <column name="ACC_ADDRESS" length="200" />
+        </property>
+        <property name="insdate" type="timestamp">
+            <column name="INSDATE" length="19"/>
+        </property>
+        <property name="transdate" type="timestamp">
+            <column name="TRANSDATE" length="19"/>
+        </property>
+        <property name="paydate" type="timestamp">
+            <column name="PAYDATE" length="19"/>
+        </property>
+        <property name="paydateFcubs" type="timestamp">
+            <column name="PAYDATE_FCUBS" length="19"/>
+        </property>
+        <property name="isapproved" type="string">
+            <column name="ISAPPROVED" length="10" />
+        </property>
+        <property name="status" type="string">
+            <column name="STATUS" length="10" />
+        </property>
+        <property name="branchcode" type="string">
+            <column name="BRANCH_CODE" length="10" />
+        </property>
+        <property name="dataxml" type="string">
+            <column name="DATAXML" length="10" />
+        </property>
+        <property name="polnum" type="string">
+            <column name="POL_NUM" length="10" />
+        </property>
+        <property name="pretyp" type="string">
+            <column name="PREM_TYP" length="10" />
+        </property>
+        <property name="area" type="string">
+            <column name="AREA" length="10" />
+        </property>
+        <property name="col_code" type="string">
+            <column name="COL_CODE" length="5" />
+        </property>
+        <property name="checksum" type="string">
+            <column name="CHECKSUM" length="32" />
+        </property>
+        <property name="idpayment" type="java.lang.Integer">
+            <column name="IDPAYMENT" length="9" />
+        </property>
+        <property name="ref_num" type="string">
+            <column name="REF_NUM" length="20" />
+        </property>
+        
+        <property name="idcard" type="string">
+            <column name="IDCARD" length="20" />
+        </property>
+        <property name="idcardDob" type="string">
+            <column name="IDCARDDOB" length="30" />
+        </property>
+        <property name="idcardName" type="string">
+            <column name="IDCARDNAME" length="100" />
+        </property>
+        <property name="idcardAddress" type="string">
+            <column name="IDCARDADDRESS" length="500" />
+        </property>
+        <property name="so_ct" type="string">
+            <column name="SO_CT" length="45" />
+        </property>
+       
+        
+        <property name="sdtKh" type="string">
+            <column name="SDT_KH" length="12" />
+        </property>
+        <property name="NoiCapCMND" type="string">
+            <column name="NoiCap_CMND" length="14" />
+        </property>
+        
+              
+    </class>
+</hibernate-mapping>

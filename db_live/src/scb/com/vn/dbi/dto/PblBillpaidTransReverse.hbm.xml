@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 14, 2017 9:58:34 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="scb.com.vn.dbi.dto.PblBillpaidTransReverse" table="PBL_BILLPAID_TRANS_REVERSE" schema="SMS_SCB" optimistic-lock="version">
+            <id name="idbillpaid" type="int">
+                <column name="IDBILLPAID" precision="9" scale="0" />
+            </id>
+            <property name="idpartner" type="string">
+                <column name="IDPARTNER" length="15" />
+            </property>
+            <property name="idservicetype" type="string">
+                <column name="IDSERVICETYPE" length="20" />
+            </property>
+            <property name="idprovider" type="string">
+                <column name="IDPROVIDER" length="20" />
+            </property>
+            <property name="customercode" type="string">
+                <column name="CUSTOMERCODE" length="30" />
+            </property>
+            <property name="idchannel" type="string">
+                <column name="IDCHANNEL" length="2" />
+            </property>
+            <property name="refPartner" type="string">
+                <column name="REF_PARTNER" length="100" />
+            </property>
+            <property name="refFcubs" type="string">
+                <column name="REF_FCUBS" length="100" />
+            </property>
+            <property name="totalamount" type="java.lang.Long">
+                <column name="TOTALAMOUNT" precision="10" scale="0" />
+            </property>
+            <property name="transdate" type="date">
+                <column name="TRANSDATE" length="7" />
+            </property>
+            <property name="status" type="java.lang.Character">
+                <column name="STATUS" length="1" />
+            </property>
+            <property name="branchCode" type="string">
+                <column name="BRANCH_CODE" length="3" />
+            </property>
+            <property name="iduserMakerReverse" type="string">
+                <column name="IDUSER_MAKER_REVERSE" length="50" />
+            </property>
+            <property name="iduserCheckerReverse" type="string">
+                <column name="IDUSER_CHECKER_REVERSE" length="50" />
+            </property>
+            <property name="reverseStatus" type="string">
+                <column name="REVERSE_STATUS" length="10" />
+            </property>
+            <property name="branchCodeReverse" type="string">
+                <column name="BRANCH_CODE_REVERSE" length="3" />
+            </property>        
+            <property name="iduserChannelMakerReverse" type="string">
+                <column name="IDUSER_CHANNEL_MAKER_REVERSE" length="50" />
+            </property>
+            <property name="iduserChannelCheckerReverse" type="string">
+                <column name="IDUSER_CHANNEL_CHECKER_REVERSE" length="50" />
+            </property>
+    </class>
+</hibernate-mapping>

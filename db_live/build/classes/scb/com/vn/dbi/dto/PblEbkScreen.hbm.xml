@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 14, 2013 2:33:04 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="scb.com.vn.dbi.dto.PblEbkScreen" table="PBL_EBK_SCREEN" schema="SMS_SCB">
+        <composite-id name="id" class="scb.com.vn.dbi.dto.PblEbkScreenId">
+            <key-property name="idscreen" type="int">
+                <column name="IDSCREEN" precision="9" scale="0" />
+            </key-property>
+            <key-property name="idservicetype" type="string">
+                <column name="IDSERVICETYPE" length="30" />
+            </key-property>
+            <key-property name="idprovider" type="string">
+                <column name="IDPROVIDER" length="30" />
+            </key-property>
+            <key-property name="idpartner" type="string">
+                <column name="IDPARTNER" length="30" />
+            </key-property>
+            <key-property name="idlang" type="string">
+                <column name="IDLANG" length="1" />
+            </key-property>
+        </composite-id>
+        <property name="data" type="string">
+            <column name="DATA" length="4000" />
+        </property>
+        <property name="description" type="string">
+            <column name="DESCRIPTION" length="4000">
+                <comment>ghi chu cac tham so truyen vao</comment>
+            </column>
+        </property>
+        <property name="data01" type="string">
+            <column name="DATA_01" length="4000" />
+        </property>
+        <property name="desription01" type="string">
+            <column name="DESRIPTION_01" length="4000" />
+        </property>
+    </class>
+</hibernate-mapping>

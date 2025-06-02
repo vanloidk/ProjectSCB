@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 15, 2013 10:08:05 AM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="scb.com.vn.dbi.dto.VwAutoReg" table="VW_AUTO_REG" schema="SMS_SCB" mutable="false">                  
+        <id name="id" type="int">
+            <column name="ID" precision="9" scale="0" />
+            <generator class="assigned" />
+        </id>                    
+        <property name="idservicetype" type="string">
+            <column name="IDSERVICETYPE" length="10" />
+        </property>
+        <property name="idprovider" type="string">
+            <column name="IDPROVIDER" length="20" />
+        </property>
+        <property name="servicetypename" type="string">
+            <column name="SERVICETYPENAME" length="150" />
+        </property>
+        <property name="providername" type="string">
+            <column name="PROVIDERNAME" length="20" />
+        </property>
+        <property name="customercode" type="string">
+            <column name="CUSTOMERCODE" length="30" />
+        </property>
+        <property name="dataxml" type="string">
+            <column name="DATAXML" length="2000" />
+        </property>
+        <property name="status" type="char">
+            <column name="STATUS" length="1" />
+        </property>
+        <property name="mobile" type="string">
+            <column name="MOBILE" length="20" />
+        </property>
+        <property name="custAccCif" type="string">
+            <column name="CUST_ACC_CIF" length="30" />
+        </property>
+        <property name="custAccNo" type="string">
+            <column name="CUST_ACC_NO" length="30" />
+        </property>
+        <property name="custAccName" type="string">
+            <column name="CUST_ACC_NAME" length="100" />
+        </property>
+        <property name="custAccAddress" type="string">
+            <column name="CUST_ACC_ADDRESS" length="200" />
+        </property>
+        <property name="custAccIdcard" type="string">
+            <column name="CUST_ACC_IDCARD" length="150" />
+        </property>
+        <property name="custAccIdcardLoc" type="string">
+            <column name="CUST_ACC_IDCARD_LOC" length="150" />
+        </property>
+        <property name="custAccIdcardDob" type="string">
+            <column name="CUST_ACC_IDCARD_DOB" length="150" />
+        </property>
+        <property name="validdate" type="date">
+            <column name="VALIDDATE" length="7" />
+        </property>
+        <property name="expiredate" type="date">
+            <column name="EXPIREDATE" length="7" />
+        </property>
+        <property name="scheduletype" type="boolean">
+            <column name="SCHEDULETYPE" precision="1" scale="0" />
+        </property>
+        <property name="daysinmonth" type="string">
+            <column name="DAYSINMONTH" length="150" />
+        </property>
+        <property name="idteller" type="string">
+            <column name="IDTELLER" length="20" />
+        </property>
+        <property name="idchanneluserTeller" type="string">
+            <column name="IDCHANNELUSER_TELLER" length="20" />
+        </property>
+        <property name="insdateTeller" type="date">
+            <column name="INSDATE_TELLER" length="7" />
+        </property>
+        <property name="idchecker" type="string">
+            <column name="IDCHECKER" length="20" />
+        </property>
+        <property name="idchanneluserChecker" type="string">
+            <column name="IDCHANNELUSER_CHECKER" length="20" />
+        </property>
+        <property name="insdateChecker" type="date">
+            <column name="INSDATE_CHECKER" length="7" />
+        </property>
+        <property name="description" type="string">
+            <column name="DESCRIPTION" length="100" />
+        </property>
+        <property name="isapproved" type="java.lang.Character">
+            <column name="ISAPPROVED" length="1" />
+        </property>
+        <property name="branchCodeTeller" type="string">
+            <column name="BRANCH_CODE_TELLER" length="3" />
+        </property>
+        <property name="branchNameTeller" type="string">
+            <column name="BRANCH_NAME_TELLER" length="105" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 15, 2013 10:08:05 AM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="scb.com.vn.dbi.dto.VwUserbranch" table="VW_USERBRANCH" schema="SMS_SCB" mutable="false">
+        <id name="iduser" type="string">
+            <column name="IDUSER" length="20" />
+        </id>
+        <property name="idEntity" type="string">
+            <column name="ID_ENTITY" length="5" />
+        </property>
+        <property name="typeuser" type="string">
+            <column name="TYPEUSER" length="3" />
+        </property>            
+        <property name="nicname" type="string">
+            <column name="NICNAME" length="40" />
+        </property>
+        <property name="salution" type="string">
+            <column name="SALUTION" length="20" />
+        </property>
+        <property name="firstname" type="string">
+            <column name="FIRSTNAME" length="50" />
+        </property>
+        <property name="lastname" type="string">
+            <column name="LASTNAME" length="50" />
+        </property>
+        <property name="address1" type="string">
+            <column name="ADDRESS1" length="60" />
+        </property>
+        <property name="address2" type="string">
+            <column name="ADDRESS2" length="60" />
+        </property>
+        <property name="city" type="string">
+            <column name="CITY" length="60" />
+        </property>
+        <property name="state" type="string">
+            <column name="STATE" length="60" />
+        </property>
+        <property name="country" type="string">
+            <column name="COUNTRY" length="60" />
+        </property>
+        <property name="zip" type="string">
+            <column name="ZIP" length="30" />
+        </property>
+        <property name="dob" type="date">
+            <column name="DOB" length="7" />
+        </property>
+        <property name="email" type="string">
+            <column name="EMAIL" length="100" />
+        </property>
+        <property name="activeflag" type="char">
+            <column name="ACTIVEFLAG" length="1" />
+        </property>
+        <property name="phonenumber" type="string">
+            <column name="PHONENUMBER" length="20" />
+        </property>
+        <property name="faxnbr" type="string">
+            <column name="FAXNBR" length="20" />
+        </property>
+        <property name="authreqd" type="char">
+            <column name="AUTHREQD" length="1" />
+        </property>
+        <property name="datcreated" type="date">
+            <column name="DATCREATED" length="7" />
+        </property>
+        <property name="makerid" type="string">
+            <column name="MAKERID" length="20" />
+        </property>
+        <property name="branchCode" type="string">
+            <column name="BRANCH_CODE" length="3" />
+        </property>
+        <property name="branchName" type="string">
+            <column name="BRANCH_NAME" length="105" />
+        </property>
+    </class>
+</hibernate-mapping>

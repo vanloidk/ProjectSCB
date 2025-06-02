@@ -1,0 +1,21 @@
+final String GET_USER_OBDX_DTL = "SELECT a.u_name ib_username, a.lock_status, u_password, b.party_id cifno, "
+            + "       case FORCE_CHANGE_PASSWORD"
+            + "         when 'Y' then "
+            + "          'DAKICHHOAT'"
+            + "         else"
+            + "          'CHUAKICHHOAT'"
+            + "       end as status"
+            + "  FROM OBDX_ADMIN_UAT.users a join OBDX_ADMIN_UAT.digx_um_userparty_relation b  on a.u_name = b.user_id "
+            + " where a.delete_status = 'N' and b.relationship_type = 'I' and a.u_name = ?";
+			
+			
+			select u.* from ETS_MSTUSER u where u.activeflag='Y' and u.iduser = (select cu.iduser from ETS_MSTCHANNELUSER cu where cu.idchanneluser=?)"
+			
+			
+			<Connector port="443" protocol="HTTP/1.1"
+               maxThreads="150" SSLEnabled="true"
+			   compression="on" scheme="https" secure="true"
+			   keystoreFile="conf/cer/willcard2020.pfx"
+			   keystorePass="Admin@123"
+			   keystoreType="PKCS12"
+			   SSLVerifyClient="none" SSLProtocol="TLSv1.2" />

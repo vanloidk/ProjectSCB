@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 1, 2017 10:00:54 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="scb.com.vn.dbi.dto.FeeTransactionUnlock" table="FEE_TRANSACTION_UNLOCK" schema="SMS_SCB" optimistic-lock="version">
+        <id name="id" type="int">
+            <column name="ID" precision="9" scale="0" />
+             <generator class="sequence">
+                <param name="sequence">SQ_UNLOCKFEE</param>
+            </generator>
+        </id>
+        <property name="cif" type="string">
+            <column name="CIF" length="10" />
+        </property>
+        <property name="custname" type="string">
+            <column name="CUSTNAME" length="200" />
+        </property>
+        <property name="username" type="string">
+            <column name="USERNAME" length="100" />
+        </property>
+        <property name="sotienphi" type="big_decimal">
+            <column name="SOTIENPHI" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="thangnam" type="string">
+            <column name="THANGNAM" length="7" />
+        </property>
+        <property name="loaikh" type="string">
+            <column name="LOAIKH" length="4" />
+        </property>
+        <property name="idaccount" type="string">
+            <column name="IDACCOUNT" length="20" />
+        </property>
+        <property name="insdate" type="timestamp">
+            <column name="INSDATE" length="19" />
+        </property>
+        <property name="paydate" type="timestamp">
+            <column name="PAYDATE" length="19" />
+        </property>
+        <property name="refFcubs" type="string">
+            <column name="REF_FCUBS" length="100" />
+        </property>        
+        <property name="status" type="java.lang.Character">
+            <column name="STATUS" length="1" />
+        </property>
+        <property name="isapproved" type="java.lang.Character">
+            <column name="ISAPPROVED" length="1" />
+        </property>
+        
+        <property name="branchCode" type="string">
+            <column name="BRANCH_CODE" length="3" />
+        </property>
+        <property name="iduserMaker" type="string">
+            <column name="IDUSER_MAKER" length="20" />
+        </property>
+        <property name="idchanneluserMaker" type="string">
+            <column name="IDCHANNELUSER_MAKER" length="100" />
+        </property>
+        <property name="iduserChecker" type="string">
+            <column name="IDUSER_CHECKER" length="20" />
+        </property>
+        <property name="idchanneluserChecker" type="string">
+            <column name="IDCHANNELUSER_CHECKER" length="100" />
+        </property>        
+         <property name="lockstatus" type="string">
+            <column name="LOCKSTATUS" length="1" />
+        </property>
+        <property name="thangnamretry" type="string">
+            <column name="THANGNAMRETRY" length="7" />
+        </property>
+        <property name="loaidv" type="string">
+            <column name="LOAIDV" length="100" />
+        </property>
+         <property name="insdateChecker" type="timestamp">
+            <column name="INSDATE_CHECKER" length="19" />
+        </property>
+         <property name="tkmd" type="string">
+            <column name="tkmd" length="20" />
+        </property>
+    </class>
+</hibernate-mapping>

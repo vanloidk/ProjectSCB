@@ -1,0 +1,14 @@
+#PAYMENT CREDIT CARD
+ws.cwws.reload.glacc.visa=452106003
+ws.cwws.reload.glacc.master=452106001
+ws.cwws.reload.acc.teller=101101001
+
+TAI KHOAN 800000004040 KHONG TON TAI
+
+
+#IBT 247
+cttq.report.dir=/u01/source/gateway/manager/live/pdf/original/report_CTTQ.jrxml
+report.images.dir=/u01/source/gateway/manager/live/pdf/original/
+247.napas.account=359206034
+fcubs.smartlink.productCredit=CTMC
+247.GLACCOUNT=459901001#

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="main" name="jar RUNNABLE--->DBI">
+    <property name="lib.dir" location="lib" />
+    <property name="bin.dir" location="D:/EBANKING/SOURCE_CODE/db_live/build/classes" />
+    <property name="war.dir" location="D:/EBANKING/SOURCE_CODE/db_live/dist" />
+    <property name="war.lib.dbi" location="lib/dbi" />
+    <property name="lib.val" value="lib/dbi" />
+
+    <path id="compile.classpath">
+        <fileset dir="${lib.dir}">
+            <include name="*.jar" />
+        </fileset>
+    </path>
+
+    <target name="main" depends="create_jar">        
+        <!--<copy file="${war.dir}/DBI_live.jar" tofile="${war.dir}/DBI_live_sit.jar" />-->        
+    </target>
+ 
+    <target name="create_jar" depends="create_run_jar">
+        <jar destfile="${war.dir}/DBIStub.jar">
+            <manifest>
+                <attribute name="Created-By" value="P. VHT-NHDT" />
+            </manifest>
+            <fileset dir="${bin.dir}">
+                <exclude name="**/bo/**" />
+                <exclude name="**/dao/**" />
+                <exclude name="**/connection/**" />
+                <exclude name="**/server/**" />
+                <exclude name="**/utility/**" />
+                <include name="**/controller/IDBI.class"/>
+                <include name="**/dto/*.class"/>
+                <include name="**/dto/*/*.class"/>
+            </fileset>
+        </jar>
+    </target>
+
+    <target name="create_run_jar" depends="cleanup">
+        <jar destfile="${war.dir}/DBI_live.jar">
+            <manifest>
+                <attribute name="Created-By" value="Ebanking Team@CoreBanking Dept@SCB" />
+                <attribute name="Main-Class" value="scb.com.vn.dbi.server.DBIServer" />                                                
+                <attribute name="Class-Path" value="${lib.val}/common-scb-1.0.jar 
+${lib.val}/axis-1.4.jar 
+${lib.val}/axis-jaxrpc-1.4.jar 
+${lib.val}/axis-saaj-1.4.jar 
+${lib.val}/axis-wsdl4j-1.5.1.jar 
+${lib.val}/commons-logging-1.0.4.jar 
+${lib.val}/commons-discovery-0.2.jar 
+${lib.val}/log4j-1.2.16.jar 
+${lib.val}/xdb-11.1.1.2.0.jar 
+${lib.val}/commons-codec-1.8.jar 
+${lib.val}/hibernate-core-4.3.8.Final.jar 
+${lib.val}/antlr-2.7.7.jar 
+${lib.val}/jboss-logging-3.1.3.GA.jar 
+${lib.val}/jboss-transaction-api_1.2_spec-1.0.0.Final.jar 
+${lib.val}/dom4j-1.6.1.jar 
+${lib.val}/hibernate-jpa-2.1-api-1.0.0.Final.jar 
+${lib.val}/javassist-3.18.1-GA.jar 
+${lib.val}/hibernate-commons-annotations-4.0.5.Final.jar 
+${lib.val}/c3p0-0.9.2.1.jar 
+${lib.val}/mchange-commons-java-0.2.3.4.jar 
+${lib.val}/dozer-5.4.0.jar 
+${lib.val}/commons-beanutils-1.8.3.jar 
+${lib.val}/commons-lang3-3.1.jar 
+${lib.val}/slf4j-api-1.6.6.jar 
+${lib.val}/slf4j-log4j12-1.6.6.jar 
+${lib.val}/jcl-over-slf4j-1.6.6.jar 
+${lib.val}/sqljdbc4-3.0.jar 
+${lib.val}/hibernate-c3p0-4.2.0.Final.jar 
+${lib.val}/c3p0-0.9.1.jar 
+${lib.val}/ojdbc6-11.2.0.jar 
+${lib.val}/bonecp-0.7.1.RELEASE.jar 
+${lib.val}/jandex-1.1.0.Final.jar 
+${lib.val}/jboss-logging-annotations-1.2.0.Beta1.jar 
+${lib.val}/guava-r08.jar"/>
+            </manifest>
+            <fileset dir="${bin.dir}" />
+        </jar>
+        <delete dir="${war.dir}/${lib.val}" />
+        <mkdir dir="${war.dir}/${lib.val}" />
+        <!--		<copy todir="${war.dir}/${lib.val}" flatten="true">
+                <path refid="compile.classpath" />
+        </copy>-->
+    </target>
+
+    <target name="cleanup">
+        <delete file="${war.dir}/DBI_live.jar" />
+        <delete file="${war.dir}/DBIStub.jar" />
+    </target>
+</project>

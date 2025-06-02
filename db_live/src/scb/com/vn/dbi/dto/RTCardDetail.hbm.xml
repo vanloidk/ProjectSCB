@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Dec 22, 2012 11:39:01 AM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="scb.com.vn.dbi.dto.RTCardDetailDTO" table="RETAIL_CARD_DETAIL" schema="SMS_SCB">
+        <id name="id" type="int">
+            <column name="ID" precision="9" scale="0" />
+            <generator class="sequence">
+                <param name="sequence">SQ_BUYCARDDETAIL</param>
+            </generator>
+        </id>
+        <property name="idprovider" type="string">
+            <column name="IDPROVIDER" length="20"  not-null="true"/>
+        </property>
+        <property name="idbuycard" type="java.lang.Integer">
+            <column name="IDBUYCARD" length="9"/>
+        </property>
+        <property name="cardcode" type="string">
+            <column name="CARDCODE" length="50"/>
+        </property>
+        <property name="serial" type="string">
+            <column name="SERIAL" length="50"/>
+        </property>
+        <property name="pricetag" type="string">
+            <column name="PRICETAG" length="20"/>
+        </property>
+        <property name="expire_date" type="string">
+            <column name="EXPIRE_DATE" length="19"/>
+        </property>
+    </class>
+</hibernate-mapping>

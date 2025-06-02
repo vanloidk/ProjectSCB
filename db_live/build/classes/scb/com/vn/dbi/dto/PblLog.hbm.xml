@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 30, 2013 5:51:14 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="scb.com.vn.dbi.dto.PblLog" table="PBL_LOG" schema="SMS_SCB">
+        <id name="id" type="int">
+            <column name="ID" precision="9" scale="0" />                        
+            <generator class="sequence">                
+                <param name="sequence">SQ_LOG</param>
+            </generator>
+        </id>
+        <property name="channel" type="string">
+            <column name="CHANNEL" length="2" />
+        </property>
+        <property name="idpartner" type="string">
+            <column name="IDPARTNER" length="10" />
+        </property>
+        <property name="idservicetype" type="string">
+            <column name="IDSERVICETYPE" length="30" />
+        </property>
+        <property name="idprovider" type="string">
+            <column name="IDPROVIDER" length="30" />
+        </property>
+        <property name="result" type="string">
+            <column name="RESULT" length="40">
+                <comment>'1': OK.</comment>
+            </column>
+        </property>
+        <property name="msglog" type="string">
+            <column name="MSGLOG" length="4000" not-null="true" />
+        </property>
+        <property name="description" type="string">
+            <column name="DESCRIPTION" length="1000" />
+        </property>
+        <property name="idmarker" type="string">
+            <column name="IDMARKER" length="60">
+                <comment>IDCHANNELUSER</comment>
+            </column>
+        </property>
+        <property name="insdate" type="timestamp">
+            <column name="INSDATE" length="19" />
+        </property>
+    </class>
+</hibernate-mapping>

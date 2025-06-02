@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 20, 2013 3:32:00 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="scb.com.vn.dbi.dto.PblAutoRegHistory" table="PBL_AUTO_REG_HISTORY" schema="SMS_SCB">
+        <id name="idlog" type="int">
+            <column name="IDLOG" precision="9" scale="0" />            
+            <generator class="sequence">                
+                <param name="sequence">SQ_PBL_AUTO_REG_LOG</param>
+            </generator>
+        </id>
+        <property name="idcontract" type="string">
+            <column name="IDCONTRACT" length="8" not-null="true" />
+        </property>
+        <property name="custAccCif" type="string">
+            <column name="CUST_ACC_CIF" length="30" not-null="true" />
+        </property>
+        <property name="custAccNo" type="string">
+            <column name="CUST_ACC_NO" length="30" not-null="true" />
+        </property>
+        <property name="custAccName" type="string">
+            <column name="CUST_ACC_NAME" length="150" not-null="true" />
+        </property>
+        <property name="custAccAddress" type="string">
+            <column name="CUST_ACC_ADDRESS" length="200" />
+        </property>
+        <property name="custAccIdcard" type="string">
+            <column name="CUST_ACC_IDCARD" length="50" />
+        </property>
+        <property name="custAccIdcardLoc" type="string">
+            <column name="CUST_ACC_IDCARD_LOC" length="100" />
+        </property>
+        <property name="custAccIdcardDob" type="string">
+            <column name="CUST_ACC_IDCARD_DOB" length="30" />
+        </property>
+        <property name="havesms" type="char">
+            <column name="HAVESMS" length="1" not-null="true">
+                <comment>Y; N</comment>
+            </column>
+        </property>
+        <property name="mobile" type="string">
+            <column name="MOBILE" length="20" />
+        </property>
+        <property name="active" type="char">
+            <column name="ACTIVE" length="1" not-null="true" />
+        </property>
+        <property name="datcreated" type="date">
+            <column name="DATCREATED" length="7" not-null="true" />
+        </property>
+        <property name="makerid" type="string">
+            <column name="MAKERID" length="20" />
+        </property>
+        <property name="branchcode" type="string">
+            <column name="BRANCHCODE" length="3">
+                <comment>branchcode maker. Luu tru branchcode goc</comment>
+            </column>
+        </property>
+        <property name="checkerid" type="string">
+            <column name="CHECKERID" length="20" />
+        </property>
+        <property name="datautheq" type="date">
+            <column name="DATAUTHEQ" length="7" />
+        </property>
+        <property name="makeridModify" type="string">
+            <column name="MAKERID_MODIFY" length="20">
+                <comment>modify</comment>
+            </column>
+        </property>
+        <property name="makeridModifyBrncode" type="string">
+            <column name="MAKERID_MODIFY_BRNCODE" length="3">
+                <comment>modify</comment>
+            </column>
+        </property>
+        <property name="makeridModifyDatcreated" type="date">
+            <column name="MAKERID_MODIFY_DATCREATED" length="7">
+                <comment>modify</comment>
+            </column>
+        </property>
+        <property name="checkeridModify" type="string">
+            <column name="CHECKERID_MODIFY" length="20">
+                <comment>modify</comment>
+            </column>
+        </property>
+        <property name="checkeridModifyDatcreate" type="date">
+            <column name="CHECKERID_MODIFY_DATCREATE" length="7">
+                <comment>modify</comment>
+            </column>
+        </property>
+        <property name="lastsendsms" type="date">
+            <column name="LASTSENDSMS" length="7" />
+        </property>
+        <property name="idservicetype" type="string">
+            <column name="IDSERVICETYPE" length="20" not-null="true" />
+        </property>
+        <property name="idprovider" type="string">
+            <column name="IDPROVIDER" length="20" not-null="true" />
+        </property>
+        <property name="customercode" type="string">
+            <column name="CUSTOMERCODE" length="30" not-null="true" />
+        </property>
+        <property name="status" type="char">
+            <column name="STATUS" length="1" not-null="true">
+                <comment>'I':Inactive; A: ACTIVE</comment>
+            </column>
+        </property>
+        <property name="validdate" type="date">
+            <column name="VALIDDATE" length="7" not-null="true" />
+        </property>
+        <property name="expiredate" type="date">
+            <column name="EXPIREDATE" length="7" />
+        </property>
+        <property name="scheduletype" type="boolean">
+            <column name="SCHEDULETYPE" precision="1" scale="0" not-null="true">
+                <comment>0: Hang ngay; 1: Chon ngay co dinh trong thang; 2: Chon nhung ngay trong thang.</comment>
+            </column>
+        </property>
+        <property name="daysinmonth" type="string">
+            <column name="DAYSINMONTH" length="150">
+                <comment>VD: 1;3;4;6;7;9;12;31</comment>
+            </column>
+        </property>
+        <property name="isapproved" type="java.lang.Character">
+            <column name="ISAPPROVED" length="1" />
+        </property>
+    </class>
+</hibernate-mapping>

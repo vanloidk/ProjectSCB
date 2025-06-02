@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd">
+<hibernate-reverse-engineering>
+ <schema-selection match-schema="SMS_SCB"/>
+   <type-mapping>        
+        <sql-type jdbc-type="DATE" hibernate-type="java.sql.Timestamp"/>
+   </type-mapping>
+   
+ <table-filter match-name="SMS_THUPHI"/>
+ <table-filter match-name="VW_SMS_THUPHI"/>
+   <table schema="SMS_SCB"  name="SMS_THUPHI">     
+    <primary-key>      
+     <generator class="sequence">
+       <param name="table">SQ_SMS_THUPHI</param>
+     </generator>
+      <key-column name="ID"/>
+    </primary-key>
+  </table>  
+  
+ 
+  <table schema="SMS_SCB" name="VW_SMS_THUPHI">
+      <primary-key>
+         <key-column name="ID" />         
+      </primary-key>
+   </table> 
+   
+</hibernate-reverse-engineering>

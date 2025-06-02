@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 28, 2013 9:05:20 AM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="scb.com.vn.dbi.dto.PblAutoregFail" table="PBL_AUTOREG_FAIL" schema="SMS_SCB">
+        <comment>Table nay ghi nhan bat cu dich vu nao trong hop dong khong thanh toan duoc. Nham de gui tin nhan va danh dau la tin nhan da gui nen se khong gui tin nhan nua, den
+            qua 1 thang sau.</comment>
+        <composite-id name="id" class="scb.com.vn.dbi.dto.PblAutoregFailId">
+            <key-property name="idcontract" type="string">
+                <column name="IDCONTRACT" length="8" />
+            </key-property>
+            <key-property name="custAccNo" type="string">
+                <column name="CUST_ACC_NO" length="30" />
+            </key-property>
+            <key-property name="idservicetype" type="string">
+                <column name="IDSERVICETYPE" length="30" />
+            </key-property>
+            <key-property name="idprovider" type="string">
+                <column name="IDPROVIDER" length="30" />
+            </key-property>
+            <key-property name="customercode" type="string">
+                <column name="CUSTOMERCODE" length="30" />
+            </key-property>
+        </composite-id>
+        <property name="numattempFail" type="int">
+            <column name="NUMATTEMP_FAIL" precision="2" scale="0">
+                <comment>So lan that bai cho phep.</comment>
+            </column>
+        </property>
+        <property name="limitNumFail" type="int">
+            <column name="LIMIT_NUM_FAIL" precision="2" scale="0" />
+        </property>
+        <property name="dateFail" type="date">
+            <column name="DATE_FAIL" length="7">
+                <comment>Ngay da gui. Dung de lay THANG trong cot nay de reset lai tin nhan.</comment>
+            </column>
+        </property>
+        <property name="sentsms" type="java.lang.Character">
+            <column name="SENTSMS" length="1">
+                <comment>Y: da gui; N: chua gui</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

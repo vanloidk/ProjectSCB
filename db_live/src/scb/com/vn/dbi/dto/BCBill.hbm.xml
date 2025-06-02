@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 22, 2013 6:09:50 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="scb.com.vn.dbi.dto.BCBill" table="BC_BILL" schema="SMS_SCB">
+        <id name="id" type="int">
+            <column name="ID"  length="20"  not-null="true" />
+            <generator class="sequence">
+                <param name="sequence">SEQ_BC_BILL</param>
+            </generator>
+        </id>
+        <property name="polnum" type="string">
+            <column name="POL_NUM" length="10" not-null="false" />
+        </property>
+        <property name="accnum" type="string">
+            <column name="ACCNUM" length="15" not-null="false" />
+        </property>
+        <property name="auto_db_dt" type="string">
+            <column name="AUTO_DB_DT" length="10" not-null="false" />
+        </property>
+        <property name="ownername" type="string">
+            <column name="OWNER_NAME" length="40" not-null="false" />
+        </property>
+        <property name="ownerid" type="string">
+            <column name="OWNER_ID" length="20" not-null="false" />
+        </property>
+        <property name="refnum" type="string">
+            <column name="REF_NUM" length="19" not-null="false" />
+        </property>
+        <property name="premtyp" type="string">
+            <column name="PREM_TYP" length="1" not-null="false">
+            </column>
+        </property>
+        <property name="duedt" type="string">
+            <column name="DUE_DT" length="10" not-null="false" />
+        </property>
+        <property name="amount" type="java.lang.Long">
+            <column name="AMOUNT" precision="20" scale="0"  not-null="false" />
+        </property>
+        <property name="amountpaid" type="java.lang.Long">
+            <column name="AMOUNTPAID" precision="20" scale="0"  not-null="false" />
+        </property>
+        <property name="colcode" type="string">
+            <column name="COL_CODE" length="5" not-null="false" />
+        </property>
+        <property name="area" type="string">
+            <column name="AREA" length="3" not-null="false" />
+        </property>
+        <property name="checksum" type="string">
+            <column name="CHECKSUM" length="32" not-null="false" />
+        </property>
+        
+        <property name="in_date" type="timestamp">
+            <column name="IN_DATE" length="19"/>
+        </property>
+    </class>
+</hibernate-mapping>

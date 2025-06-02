@@ -1,0 +1,149 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 25, 2013 10:12:57 AM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="scb.com.vn.dbi.dto.SITrftToSIAuth" table="SI_TRFTOSI_AUTH" schema="SMS_SCB">
+        <id name="idbillpaid" type="int">
+            <column name="IDBILLPAID" precision="9" scale="0" />
+            <generator class="sequence">
+                <param name="sequence">SQ_BILLPAID</param>
+            </generator>
+        </id>
+        <property name="servicetype" type="string">
+            <column name="IDSERVICETYPE" length="20" not-null="true" />
+        </property>
+        <property name="provider" type="string">
+            <column name="IDPROVIDER" length="10" not-null="true" />
+        </property>
+        <many-to-one name="pfipartner" class="scb.com.vn.dbi.dto.PFIPartner" fetch="select" lazy="false">
+            <column name="IDPARTNER" length="10" not-null="true" />
+        </many-to-one>
+        <property name="customercode" type="string">
+            <column name="CUSTOMERCODE" length="30" not-null="true" />
+        </property>
+        <property name="dataxml" type="string">
+            <column name="DATAXML" length="5000" />
+        </property>
+        <property name="iduserMaker" type="string">
+            <column name="IDUSER_MAKER" length="20" />
+        </property>
+        <property name="idchanneluserMaker" type="string">
+            <column name="IDCHANNELUSER_MAKER" length="20" />
+        </property>
+        <property name="insdateMaker" type="timestamp">
+            <column name="INSDATE_MAKER" length="19" />
+        </property>
+        <property name="iduserChecker" type="string">
+            <column name="IDUSER_CHECKER" length="20" />
+        </property>
+        <property name="idchanneluserChecker" type="string">
+            <column name="IDCHANNELUSER_CHECKER" length="20" />
+        </property>
+        <property name="insdateChecker" type="timestamp">
+            <column name="INSDATE_CHECKER" length="19" />
+        </property>
+        <property name="idchannel" type="string">
+            <column name="IDCHANNEL" length="2" />
+        </property>
+        <property name="usertype" type="string">
+            <column name="USERTYPE" length="3" />
+        </property>
+        <property name="refPartner" type="string">
+            <column name="REF_PARTNER" length="100" />
+        </property>
+        <property name="refFcubs" type="string">
+            <column name="REF_FCUBS" length="100" />
+        </property>
+        <property name="totalamount" type="java.lang.Long">
+            <column name="TOTALAMOUNT" precision="15" scale="0" />
+        </property>
+        <property name="paymentmethod" type="java.lang.Integer">
+            <column name="PAYMENTMETHOD" precision="6" scale="0">
+                <comment>1: Tien mat. 2: Tu TK cua KH; 3: Tu TK cua Ngan hang</comment>
+            </column>
+        </property>
+        <property name="accCust" type="string">
+            <column name="ACC_CUST" length="20" />
+        </property>
+        <property name="accIdaccount" type="string">
+            <column name="ACC_IDACCOUNT" length="20" />
+        </property>
+        <property name="accHoldername" type="string">
+            <column name="ACC_HOLDERNAME" length="200" />
+        </property>
+        <property name="accAddress" type="string">
+            <column name="ACC_ADDRESS" length="200" />
+        </property>
+        <property name="insdate" type="timestamp">
+            <column name="INSDATE" length="19" />
+        </property>
+        <property name="transdate" type="timestamp">
+            <column name="TRANSDATE" length="19">
+                <comment>Thoi gian thuc hien giao dich</comment>
+            </column>
+        </property>
+        <property name="paydate" type="timestamp">
+            <column name="PAYDATE" length="19">
+                <comment>Thoi gian thanh toan thanh cong voi DOI TAC</comment>
+            </column>
+        </property>
+        <property name="paydateFcubs" type="timestamp">
+            <column name="PAYDATE_FCUBS" length="19">
+                <comment>Thoi gian thanh toan thanh cong CORE</comment>
+            </column>
+        </property>
+        <property name="isapproved" type="java.lang.Character">
+            <column name="ISAPPROVED" length="1">
+                <comment>W (wait approve): Cho duyet ; A (Approved): Da duyet.</comment>
+            </column>
+        </property>
+        <property name="status" type="java.lang.Character">
+            <column name="STATUS" length="1">
+                <comment>W (wait approve): Cho duyet ; D (Done): hoanh thanh; F (Fail) : Giao dich khong thanh cong</comment>
+            </column>
+        </property>
+        <property name="branchcode" type="string">
+            <column name="BRANCH_CODE" length="3" />
+        </property>
+        <property name="siname" type="string">
+            <column name="CUSTOMERSINAME" length="200" />
+        </property>
+        <property name="branch_name" type="string">
+            <column name="BRANCH_NAME" length="200" />
+        </property>
+        <property name="cusType" type="string">
+            <column name="CUSTTYPE" length="2" />
+        </property>
+        
+        <!-- cho kh ca nhan!-->
+        <property name="CMND" type="string">
+            <column name="IDNUMBER" length="12" />
+        </property>
+        <property name="ngayCapCMND" type="string">
+            <column name="IDDATE" length="12" />
+        </property>
+        <property name="noiCapCMND" type="string">
+            <column name="IDPLACE" length="200" />
+        </property>
+        <property name="sdtKH" type="string">
+            <column name="PHONENO" length="14" />
+        </property>
+        <!-- cho kh doanh nghiep!-->
+        <property name="dNguoiNopTien" type="string">
+            <column name="RE_CUSTNAME" length="200" />
+        </property>
+        <property name="dCMND" type="string">
+            <column name="RE_IDNUMBER" length="200" />
+        </property>
+        <property name="dNgayCap" type="string">
+            <column name="RE_IDDATE" length="12" />
+        </property>
+        <property name="dNoiCap" type="string">
+            <column name="RE_IDPLACE" length="200" />
+        </property>
+        <property name="dsdt" type="string">
+            <column name="RE_PHONENO" length="14" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="scb.com.vn.dbi.dto.VwCustAccountNew" table="VW_CUST_ACCOUNT_NEW" mutable="true">
+        <id name="custNo" type="string">
+            <column length="20" name="CUST_NO" />
+            <generator class="assigned" />
+        </id>
+        <property name="custAcNo" type="string">
+            <column length="20" name="CUST_AC_NO" />
+        </property>
+        <property name="acDesc" type="string">
+            <column length="105" name="AC_DESC" />
+        </property>
+        <property name="ccy" type="string">
+            <column length="3" name="CCY" />
+        </property>
+        <property name="accountClass" type="string">
+            <column length="6" name="ACCOUNT_CLASS" />
+        </property>
+        <property name="recordStat" type="java.lang.Character">
+            <column length="1" name="RECORD_STAT" />
+        </property>
+        <property name="acyAvlBal" type="big_decimal">
+            <column name="ACY_AVL_BAL" precision="22" scale="0" />
+        </property>
+        <property name="fullName" type="string">
+            <column name="FULL_NAME" length="105" />
+        </property>
+        <property name="idcard" type="string">
+            <column name="IDCARD" length="50" />
+        </property>
+        <property name="address" type="string">
+            <column name="ADDRESS" length="105" />
+        </property>
+    </class>
+</hibernate-mapping>

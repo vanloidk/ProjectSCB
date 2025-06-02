@@ -1,0 +1,178 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 5, 2015 5:22:28 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="scb.com.vn.dbi.dto.EbIssuecard" table="EB_ISSUECARD" schema="SMS_SCB">
+        <id name="id" type="java.lang.Integer">
+            <column name="ID" precision="9" scale="0" />
+            <generator class="sequence">
+                <param name="sequence">SEQ_EB_ISSUECARD</param>
+            </generator>
+        </id>
+        <many-to-one name="CARDTYPE" class="scb.com.vn.dbi.dto.CardType" fetch="select" lazy="false">
+            <column name="CARDTYPE" length="6" not-null="false" />
+        </many-to-one>
+         <many-to-one name="CUSTOMERNO" class="scb.com.vn.dbi.dto.VwMbCustomer" fetch="select" lazy="false">
+            <column name="CUSTOMER_NO" length="9" not-null="false" />
+        </many-to-one>       
+        <property name="registertype" type="string">
+            <column name="REGISTERTYPE" length="2" />
+        </property>
+        <property name="brn" type="string">
+            <column name="BRN" length="2" />
+        </property>
+        <property name="issuetype" type="java.lang.Character">
+            <column name="ISSUETYPE" length="1" />
+        </property>
+        <property name="sourceaccount" type="string">
+            <column name="SOURCEACCOUNT" length="20" />
+        </property>
+        <property name="cardaccountno" type="java.lang.Long">
+            <column name="CARDACCOUNTNO" precision="12" scale="0" />
+        </property>
+        <property name="refFcubs" type="string">
+            <column name="REF_FCUBS" length="16" />
+        </property>
+        <property name="amountfee" type="big_decimal">
+            <column name="AMOUNTFEE" precision="22" scale="0" />
+        </property>
+        <property name="amounttax" type="big_decimal">
+            <column name="AMOUNTTAX" precision="22" scale="0" />
+        </property>
+        <property name="fullname" type="string">
+            <column name="FULLNAME" length="22" />
+        </property>
+        <property name="idnumber" type="string">
+            <column name="IDNUMBER" length="20" />
+        </property>
+        <property name="birthday" type="java.lang.Integer">
+            <column name="BIRTHDAY" precision="8" scale="0" />
+        </property>
+        <property name="relationship" type="string">
+            <column name="RELATIONSHIP" length="20" />
+        </property>
+        <property name="cardrecievemode" type="java.lang.Character">
+            <column name="CARDRECIEVEMODE" length="1" />
+        </property>
+        <property name="branchcode" type="string">
+            <column name="BRANCHCODE" length="3" />
+        </property>
+        <property name="address" type="string">
+            <column name="ADDRESS" length="160" />
+        </property>
+        <property name="limitrequest" type="big_decimal">
+            <column name="LIMITREQUEST" precision="22" scale="0" />
+        </property>
+        <property name="guaranteemode" type="string">
+            <column name="GUARANTEEMODE" length="2" />
+        </property>
+        <property name="guaranteemodeinfo" type="string">
+            <column name="GUARANTEEMODEINFO" length="2" />
+        </property>
+        <property name="loanpurpose" type="string">
+            <column name="LOANPURPOSE" length="500" />
+        </property>
+        <property name="loanamount" type="java.lang.Long">
+            <column name="LOANAMOUNT" precision="11" scale="0" />
+        </property>
+        <property name="expectedtime" type="java.lang.Short">
+            <column name="EXPECTEDTIME" precision="3" scale="0" />
+        </property>
+        <property name="expectinterest" type="big_decimal">
+            <column name="EXPECTINTEREST" precision="10" scale="5" />
+        </property>
+        <property name="repaymentsource" type="string">
+            <column name="REPAYMENTSOURCE" length="1000" />
+        </property>
+        <property name="idchannel" type="string">
+            <column name="IDCHANNEL" length="2" />
+        </property>               
+        <property name="idchanneluser" type="string">
+            <column name="IDCHANNELUSER" length="20" />
+        </property>
+        <property name="insdate" type="timestamp">
+            <column name="INSDATE" length="7" />
+        </property>
+        <property name="checkeddate" type="timestamp">
+            <column name="CHECKEDDATE" length="7" />
+        </property>
+        <property name="idchecker" type="string">
+            <column name="IDCHECKER" length="20" />
+        </property>
+        <property name="idchannelchecker" type="string">
+            <column name="IDCHANNELCHECKER" length="20" />
+        </property>
+        <property name="cardno" type="string">
+            <column name="CARDNO" length="19" />
+        </property>
+        <property name="accountno" type="string">
+            <column name="ACCOUNTNO" length="19" />
+        </property>
+        <property name="accountbalance" type="java.lang.Long">
+            <column name="ACCOUNTBALANCE" precision="10" scale="0" />
+        </property>
+        <property name="issuebranchcode" type="string">
+            <column name="ISSUEBRANCHCODE" length="3" />
+        </property>
+        <property name="ischecked" type="java.lang.Character">
+            <column name="ISCHECKED" length="1" />
+        </property>
+          <property name="email" type="string">
+                <column name="EMAIL" length="100" />
+            </property>
+            <property name="existscb" type="java.lang.Character">
+                <column name="EXISTSCB" length="1" />
+            </property>
+            <property name="existotherbank" type="java.lang.Character">
+                <column name="EXISTOTHERBANK" length="1" />
+            </property>
+            <property name="incomegreaterfivem" type="java.lang.Character">
+                <column name="INCOMEGREATERFIVEM" length="1" />
+            </property>
+            <property name="telCus" type="string">
+                <column name="TELCUS" length="20" />
+            </property>
+           <property name="issueidDate" type="string">
+                <column name="ISSUEID_DATE" length="8"  />
+            </property>
+            <property name="issueidPlace" type="string">
+                <column name="ISSUEID_PLACE" length="1000" />
+            </property>
+            <property name="sex" type="string">
+                <column name="SEX" length="1" />
+            </property>             
+              <property name="ccy" type="string">
+                <column name="CCY" length="3" />
+            </property>   
+             <property name="stateEmailPeriod" type="string">
+                <column name="STATE_EMAIL_PERIOD" length="10" />
+            </property>  
+             <property name="statePostPeriod" type="string">
+                <column name="STATE_POST_PERIOD" length="10" />
+            </property>  
+             <property name="isAttach" type="string">
+                <column name="IS_ATTACH" length="10" />
+            </property>        
+            
+            <property name="collateral" type="string">
+                <column name="COLLATERAL" length="10" />
+            </property>        
+            <property name="guaranteeFromDate" type="string">
+                <column name="GUARANTEE_FROM_DATE" length="20" />
+            </property>        
+            <property name="guaranteeToDate" type="string">
+                <column name="GUARANTEE_TO_DATE" length="20" />
+            </property>        
+            
+            <property name="address01" type="string">
+                <column name="ADDRESS01" length="200" />
+            </property>           
+            <property name="collateralDesc" type="string">
+                <column name="COLLATERALDESC" length="200" />
+            </property>           
+            <property name="guaranteeType" type="string">
+                <column name="GUARANTEE_TYPE" length="10" />
+            </property>
+    </class>
+</hibernate-mapping>

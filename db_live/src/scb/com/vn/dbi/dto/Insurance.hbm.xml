@@ -1,0 +1,150 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 25, 2013 10:12:57 AM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="scb.com.vn.dbi.dto.Insurance" table="INS_DANGKY" schema="SMS_SCB">
+        <id name="idREG" type="int">
+            <column name="IDDANGKY" precision="9" scale="0" />
+            <generator class="sequence">
+                <param name="sequence">SQ_INSURANCE</param>
+            </generator>
+        </id>
+        <property name="idPartner" type="string">
+            <column name="IDPARTNER" length="10" />
+        </property>
+        <property name="idProduct" type="string">
+            <column name="IDSANPHAM" length="30"/>
+        </property>
+        <property name="idDiscount" type="int">
+            <column name="IDCHIETKHAU" length="10" />
+        </property>
+        <property name="regName" type="string">
+            <column name="TENNGUOIDANGKY" length="200" />
+        </property>
+        <property name="benName" type="string">
+            <column name="TENNGUOITHUHUONG" length="200" />
+        </property>
+        <property name="addService" type="string">
+            <column name="DIACHINHAN" length="200" />
+        </property>
+        <property name="addBen" type="string">
+            <column name="DIACHITHUHUONG" length="200" />
+        </property>
+        <property name="address" type="string">
+            <column name="DIACHICHUNHA" length="200" />
+        </property>
+        <property name="regPhone" type="string">
+            <column name="DIENTHOAIDANGKY" length="15" />
+        </property>
+        <property name="regMail" type="string">
+            <column name="EMAILDANGKY" length="100" />
+        </property>
+        <property name="soxe" type="string">
+            <column name="SOXE" length="15" />
+        </property>
+        <property name="sokhung" type="string">
+            <column name="SOKHUNG" length="20" />
+        </property>
+        <property name="somay" type="string">
+            <column name="SOMAY" length="20" />
+        </property>
+        <property name="loaixe" type="string">
+            <column name="LOAIXE" length="20" />
+        </property>
+        <property name="dob" type="timestamp">
+            <column name="NGAYSINH" length="19" />
+        </property>
+        <property name="sex" type="string">
+            <column name="GIOITINH" length="1" />
+        </property>
+        <property name="idcard" type="string">
+            <column name="CMND" length="15" />
+        </property>
+        <property name="feeName" type="string">
+            <column name="TENPHI" length="50" />
+        </property>
+        <property name="businessCode" type="string">
+            <column name="NHANHIEU" length="50" />
+        </property>
+        <property name="channel" type="string">
+            <column name="KENHDANGKY" length="20" />
+        </property>
+        <property name="regDate" type="timestamp">
+            <column name="NGAYDANGKY" length="19" />
+        </property>
+        <property name="validDate" type="timestamp">
+            <column name="NGAYHIEULUC" length="19" />
+        </property>
+        <property name="expireDate" type="timestamp">
+            <column name="NGAYHETHAN" length="19" />
+        </property>
+        <property name="refPartner" type="string">
+            <column name="REF_PARTNER" length="100" />
+        </property>
+        <property name="refFcubs" type="string">
+            <column name="REF_FCUBS" length="100" />
+        </property>
+        <property name="refBC" type="string">
+            <column name="BCREF" length="100" />
+        </property>
+        <property name="totalamount" type="java.lang.Long">
+            <column name="TOTALAMOUNT" precision="10" scale="0" />
+        </property>
+        <property name="discountAamount" type="java.lang.Long">
+            <column name="DISCOUNTAMOUNT" precision="10" scale="0" />
+        </property>
+        <property name="sotien_bhbb" type="java.lang.Long">
+            <column name="SOTIEN_BHBB" precision="10" scale="0" />
+        </property>
+        <property name="sotien_bhtn" type="java.lang.Long">
+            <column name="SOTIEN_BHTN" precision="10" scale="0" />
+        </property>
+        <property name="phi_bhbb" type="java.lang.Long">
+            <column name="PHI_BHBB" precision="10" scale="0" />
+        </property>
+        <property name="phi_bhtn" type="java.lang.Long">
+            <column name="PHI_BHTN" precision="10" scale="0" />
+        </property>
+        <property name="bcAccount" type="string">
+            <column name="BCACCOUNT" length="20" />
+        </property>
+        <property name="accCust" type="string">
+            <column name="ACC_CUST" length="20" />
+        </property>
+        <property name="accIdaccount" type="string">
+            <column name="ACC_IDACCOUNT" length="20" />
+        </property>
+        <property name="idchanneluserMaker" type="string">
+            <column name="IDUSER_MAKER" length="50" />
+        </property>
+        <property name="insdateMaker" type="timestamp">
+            <column name="DATE_MAKER" length="19" />
+        </property>
+        <property name="idchanneluserChecker" type="string">
+            <column name="IDUSER_CHECKER" length="20" />
+        </property>
+        <property name="insdateChecker" type="timestamp">
+            <column name="DATE_CHECKER" length="19" />
+        </property>
+        <property name="transdate" type="timestamp">
+            <column name="TRANSDATE" length="19">
+                <comment>Thoi gian thuc hien giao dich</comment>
+            </column>
+        </property>
+        <property name="paydateFcubs" type="timestamp">
+            <column name="PAYDATE_FCUBS" length="19">
+                <comment>Thoi gian thanh toan thanh cong CORE</comment>
+            </column>
+        </property>
+        <property name="status" type="string">
+            <column name="STATUS" length="2">
+                <comment>00: Thanh cong ; 01: Timeout</comment>
+            </column>
+        </property>
+        <property name="branchcode" type="string">
+            <column name="BRANCHCODE" length="3" />
+        </property>
+
+    </class>
+</hibernate-mapping>

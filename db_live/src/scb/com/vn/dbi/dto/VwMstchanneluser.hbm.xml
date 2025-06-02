@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 25, 2013 2:35:32 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="scb.com.vn.dbi.dto.VwMstchanneluser" table="VW_MSTCHANNELUSER" schema="SMS_SCB">
+           <id name="iduser" type="string">
+                <column name="IDUSER" length="20" />
+                <generator class="assigned" />
+           </id> 
+           <property name="idchanneluser" type="string">
+             <column name="IDCHANNELUSER" length="20" />              
+           </property>     
+            <property name="idEntity" type="string">
+                <column name="ID_ENTITY" length="5" />
+            </property>
+       
+            <property name="idchannel" type="string">
+                <column name="IDCHANNEL" length="2" />
+            </property>
+            <property name="password" type="string">
+                <column name="PASSWORD" length="2000" />
+            </property>
+            <property name="lockflag" type="char">
+                <column name="LOCKFLAG" length="1" />
+            </property>
+            <property name="datlastsucclogin" type="date">
+                <column name="DATLASTSUCCLOGIN" length="7" />
+            </property>
+            <property name="datlastfaillogin" type="date">
+                <column name="DATLASTFAILLOGIN" length="7" />
+            </property>
+            <property name="nbrfailedlogins" type="big_decimal">
+                <column name="NBRFAILEDLOGINS" precision="22" scale="0" />
+            </property>
+            <property name="nbrlogins" type="big_decimal">
+                <column name="NBRLOGINS" precision="22" scale="0" />
+            </property>
+            <property name="defaulttxn" type="string">
+                <column name="DEFAULTTXN" length="3" />
+            </property>
+            <property name="datsoftlastfail" type="date">
+                <column name="DATSOFTLASTFAIL" length="7" />
+            </property>
+            <property name="flagforcechangepwd" type="java.lang.Character">
+                <column name="FLAGFORCECHANGEPWD" length="1" />
+            </property>
+            <property name="isavcrequired" type="java.lang.Character">
+                <column name="ISAVCREQUIRED" length="1" />
+            </property>
+            <property name="activationcode" type="string">
+                <column name="ACTIVATIONCODE" length="400" />
+            </property>
+            <property name="datavcgeneration" type="date">
+                <column name="DATAVCGENERATION" length="7" />
+            </property>
+            <property name="failedattemptcnt" type="big_decimal">
+                <column name="FAILEDATTEMPTCNT" precision="22" scale="0" />
+            </property>
+            <property name="flagforcechangetxnpwd" type="java.lang.Character">
+                <column name="FLAGFORCECHANGETXNPWD" length="1" />
+            </property>
+            <property name="deactivationperiod" type="string">
+                <column name="DEACTIVATIONPERIOD" length="2000" />
+            </property>
+    </class>
+</hibernate-mapping>

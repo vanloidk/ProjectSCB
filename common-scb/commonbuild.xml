@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="main" name="create jar --->>COMMON">
+    <!--this file was created by Eclipse Runnable JAR Export Wizard-->
+    <property name="lib.dir" location="lib" />
+    <!--<property name="bin.dir" location="D:/Dropbox/MYPROJECTS/NETBEANJAVA/common-scb/target/classes" />-->        
+    <property name="bin.dir" location="${project.build.directory}/classes" />                
+    <property name="war.dir" location="D:/EBANKING/SOURCE_CODE/Library/JAVA/WAR" />
+    <property name="war.lib.common" location="lib/common" />
+    <property name="lib.val" value="lib/common" />
+
+    <path id="compile.classpath">
+        <fileset dir="${lib.dir}">
+            <include name="*.jar" />
+        </fileset>
+    </path>
+
+    <target name="main" depends="create_jar">
+        <copy file="${bin.dir}/common-scb.jar" tofile="${war.dir}/common-scb.jar" />
+    </target>
+
+    <target name="create_jar" depends="cleanup">
+        <jar destfile="${bin.dir}/common-scb.jar">
+            <manifest>
+                <attribute name="Created-By" value="phucnnd (email: phucng2001@gmail.com)" />
+                <!--<attribute name="Class-Path" value=". ${lib.val}/sqljdbc4.jar ${lib.val}/ojdbc14.jar ${lib.val}/xdb.jar ${lib.val}/tomcat-jdbc.jar ${lib.val}/tomcat-juli.jar" />-->
+            </manifest>
+            <fileset dir="${bin.dir}" />
+        </jar>
+        <!--
+        <delete dir="${war.dir}/${lib.val}" />
+        <mkdir dir="${war.dir}/${lib.val}" />
+        <copy todir="${war.dir}/${lib.val}" flatten="true">
+                <path refid="compile.classpath" />
+        </copy>
+        -->
+    </target>
+    <target name="cleanup">		
+        <delete file="${bin.dir}/common-scb.jar" />		
+    </target>
+</project>

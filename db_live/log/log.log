@@ -1,0 +1,436 @@
+15:15:48,634  WARN DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+ 15:15:48,719  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/PblAutoRegContract.hbm.xml
+ 15:15:49,770  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/PblAutoReg.hbm.xml
+ 15:15:49,816  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/PblProvider.hbm.xml
+ 15:15:49,856  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/PblServicetype.hbm.xml
+ 15:15:49,868  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/PblPartnerservice.hbm.xml
+ 15:15:49,913  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/PblPartner.hbm.xml
+ 15:15:49,943  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/VwCustAccount.hbm.xml
+ 15:15:50,001  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/VwCustAccountNew.hbm.xml
+ 15:15:50,091  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/VwWaitapprove.hbm.xml
+ 15:15:50,115  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/VwWaitapproveBranch.hbm.xml
+ 15:15:50,168  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/PblBillpaid.hbm.xml
+ 15:15:50,181  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/VwAutoReg.hbm.xml
+ 15:15:50,193  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/VwUserbranch.hbm.xml
+ 15:15:50,230  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/PblEbkProcess.hbm.xml
+ 15:15:50,241  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/PblEbkScreen.hbm.xml
+ 15:15:50,266  WARN DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+ 15:15:50,269  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/PblCollated.hbm.xml
+ 15:15:50,306  WARN DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+ 15:15:50,309  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/PblLog.hbm.xml
+ 15:15:50,322  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/BPblAutoReg.hbm.xml
+ 15:15:50,374  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/BPblAutoRegContract.hbm.xml
+ 15:15:50,390  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/PblAutoRegHistory.hbm.xml
+ 15:15:50,400  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/EtsMstbranch.hbm.xml
+ 15:15:50,474  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/VwAutoregToPay.hbm.xml
+ 15:15:50,494  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/PblAutoregFail.hbm.xml
+ 15:15:50,504  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/VwMstchanneluser.hbm.xml
+ 15:15:50,507  WARN DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+ 15:15:50,510  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/PblCustTemplate.hbm.xml
+ 15:15:50,519  WARN DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+ 15:15:50,521  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/SmsPartner.hbm.xml
+ 15:15:50,529  WARN DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+ 15:15:50,532  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/SmsSender.hbm.xml
+ 15:15:50,559  WARN DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+ 15:15:50,562  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/VwSmsThuphi.hbm.xml
+ 15:15:50,573  WARN DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+ 15:15:50,576  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/SmsThuphi.hbm.xml
+ 15:15:50,586  WARN DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+ 15:15:50,611  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/InsurancePayment.hbm.xml
+ 15:15:50,636  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/SITrftToSIAuth.hbm.xml
+ 15:15:50,647  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/PFIPartner.hbm.xml
+ 15:15:50,652  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/EbIssuecard.hbm.xml
+ 15:15:50,668  WARN DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+ 15:15:50,672  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/CardType.hbm.xml
+ 15:15:50,674  WARN DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+ 15:15:50,677  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/VwMbCustomer.hbm.xml
+ 15:15:50,699  WARN DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+ 15:15:50,702  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/FeeTransactionUnlock.hbm.xml
+ 15:15:50,714  INFO Configuration:2216 - HHH000041: Configured SessionFactory: null
+ 15:15:51,021  WARN ConnectionProviderInitiator:206 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+ 15:15:51,043  WARN DriverManagerConnectionProviderImpl:93 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+ 15:15:52,146  INFO DriverManagerConnectionProviderImpl:166 - HHH000401: using driver [oracle.jdbc.driver.OracleDriver] at URL [jdbc:oracle:thin:@192.168.74.19:1521/DBEBGW19C]
+ 15:15:52,147  INFO DriverManagerConnectionProviderImpl:175 - HHH000046: Connection properties: {user=sms_scb, password=****}
+ 15:15:52,147  INFO DriverManagerConnectionProviderImpl:180 - HHH000006: Autocommit mode: false
+ 15:15:52,155  INFO DriverManagerConnectionProviderImpl:102 - HHH000115: Hibernate connection pool size: 10 (min=1)
+ 15:15:57,031  INFO Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+ 15:15:57,362  WARN RootClass:288 - HHH000038: Composite-id class does not override equals(): scb.com.vn.dbi.dto.VwWaitapproveId
+ 15:15:57,362  WARN RootClass:289 - HHH000039: Composite-id class does not override hashCode(): scb.com.vn.dbi.dto.VwWaitapproveId
+ 15:15:57,523  WARN RootClass:288 - HHH000038: Composite-id class does not override equals(): scb.com.vn.dbi.dto.VwAutoregToPayId
+ 15:15:57,523  WARN RootClass:289 - HHH000039: Composite-id class does not override hashCode(): scb.com.vn.dbi.dto.VwAutoregToPayId
+ 15:15:57,592  INFO TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+ 15:15:57,613  INFO ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+ 15:16:01,551  INFO DBIServer:25 - 3. Hoan thanh gan ket, dang lang nghe yeu cau tu may khach ...
+ 15:16:21,736  INFO DBIImpl:16848 - cw_INSERT_INFO_CHANGE_PIN --> [IN] --> CARDNUMBER = [545579XXXXXX8735], mobileno = [0390072501], fullname = [NGUYEN VAN DEMO]
+ 15:16:21,938  WARN DatabaseController:87 - The CONNECTION_MANAGER does not contain cwdwh. --> Thuc hien khoi tao ket noi
+ 15:16:24,251 ERROR DatabaseController:107 - CONNECTION_MANAGER DOES NOT CONTAIN KEY = [cwdwh]. Ex: java.lang.NullPointerException
+ 15:16:24,251  INFO DatabaseController:33 - putValueToConnectionManager --> key = [cwdwh], value = [true]
+ 15:16:24,251  INFO ConnectionManager:54 - ===============Hoàn tất khởi tạo kết nối: cwdwh
+ 15:16:24,251  INFO ConnectionManager:55 - ===============Size: 1
+ 15:16:25,039  INFO DBIImpl:16851 - cw_INSERT_INFO_CHANGE_PIN --> [OUT] --> result = [202503131512555438000000031488735]
+ 15:16:25,042  INFO DBIImpl:19276 - checkIdPDF --> [IN] --> PanMask = [545579XXXXXX8735], IdPDF = [M2204553379]
+ 15:16:25,483  INFO DBIImpl:19279 - checkIdPDF --> [OUT] --> Size = [1]
+ 15:17:56,859  INFO DBIImpl:16848 - cw_INSERT_INFO_CHANGE_PIN --> [IN] --> CARDNUMBER = [545579XXXXXX8735], mobileno = [0390072501], fullname = [NGUYEN VAN DEMO]
+ 15:17:57,210  INFO DBIImpl:16851 - cw_INSERT_INFO_CHANGE_PIN --> [OUT] --> result = [202503131514277058000000031488735]
+ 15:17:57,212  INFO DBIImpl:19276 - checkIdPDF --> [IN] --> PanMask = [545579XXXXXX8735], IdPDF = [M2204553379]
+ 15:17:58,344  INFO DBIImpl:19279 - checkIdPDF --> [OUT] --> Size = [1]
+ 15:20:31,679  INFO DBIImpl:16848 - cw_INSERT_INFO_CHANGE_PIN --> [IN] --> CARDNUMBER = [545579XXXXXX8735], mobileno = [0390072501], fullname = [NGUYEN VAN DEMO]
+ 15:20:31,990  INFO DBIImpl:16851 - cw_INSERT_INFO_CHANGE_PIN --> [OUT] --> result = [202503131517024968000000031488735]
+ 15:20:31,992  INFO DBIImpl:19276 - checkIdPDF --> [IN] --> PanMask = [545579XXXXXX8735], IdPDF = [M2204553379]
+ 15:20:32,199  INFO DBIImpl:19279 - checkIdPDF --> [OUT] --> Size = [1]
+ 15:20:54,688  INFO DBIImpl:16848 - cw_INSERT_INFO_CHANGE_PIN --> [IN] --> CARDNUMBER = [545579XXXXXX8735], mobileno = [0390072501], fullname = [NGUYEN VAN DEMO]
+ 15:20:54,799  INFO DBIImpl:16851 - cw_INSERT_INFO_CHANGE_PIN --> [OUT] --> result = [202503131517253118000000031488735]
+ 15:20:54,800  INFO DBIImpl:19276 - checkIdPDF --> [IN] --> PanMask = [545579XXXXXX8735], IdPDF = [M2204553379]
+ 15:20:55,008  INFO DBIImpl:19279 - checkIdPDF --> [OUT] --> Size = [1]
+ 15:21:17,476  INFO DBIImpl:16848 - cw_INSERT_INFO_CHANGE_PIN --> [IN] --> CARDNUMBER = [545579XXXXXX8735], mobileno = [0390072501], fullname = [NGUYEN VAN DEMO]
+ 15:21:19,313  INFO DBIImpl:16851 - cw_INSERT_INFO_CHANGE_PIN --> [OUT] --> result = [202503131517498058000000031488735]
+ 15:21:19,315  INFO DBIImpl:19276 - checkIdPDF --> [IN] --> PanMask = [545579XXXXXX8735], IdPDF = [M2204553379]
+ 15:21:19,666  INFO DBIImpl:16848 - cw_INSERT_INFO_CHANGE_PIN --> [IN] --> CARDNUMBER = [545579XXXXXX8735], mobileno = [0390072501], fullname = [NGUYEN VAN DEMO]
+ 15:21:19,819  INFO DBIImpl:16848 - cw_INSERT_INFO_CHANGE_PIN --> [IN] --> CARDNUMBER = [545579XXXXXX8735], mobileno = [0390072501], fullname = [NGUYEN VAN DEMO]
+ 15:21:20,508  INFO DBIImpl:16851 - cw_INSERT_INFO_CHANGE_PIN --> [OUT] --> result = [202503131517502998000000031488735]
+ 15:21:20,510  INFO DBIImpl:19276 - checkIdPDF --> [IN] --> PanMask = [545579XXXXXX8735], IdPDF = [M2204553379]
+ 15:21:20,518  INFO DBIImpl:19279 - checkIdPDF --> [OUT] --> Size = [1]
+ 15:21:20,588  INFO DBIImpl:19279 - checkIdPDF --> [OUT] --> Size = [1]
+ 15:21:20,760  INFO DBIImpl:16851 - cw_INSERT_INFO_CHANGE_PIN --> [OUT] --> result = [202503131517512588000000031488735]
+ 15:21:20,761  INFO DBIImpl:19276 - checkIdPDF --> [IN] --> PanMask = [545579XXXXXX8735], IdPDF = [M2204553379]
+ 15:21:20,771  INFO DBIImpl:19279 - checkIdPDF --> [OUT] --> Size = [1]
+ 15:25:51,644  INFO DBIImpl:16848 - cw_INSERT_INFO_CHANGE_PIN --> [IN] --> CARDNUMBER = [545579XXXXXX8735], mobileno = [0390072501], fullname = [NGUYEN VAN DEMO]
+ 15:25:51,757  INFO DBIImpl:16851 - cw_INSERT_INFO_CHANGE_PIN --> [OUT] --> result = [202503131522222698000000031488735]
+ 15:25:51,764  INFO DBIImpl:19276 - checkIdPDF --> [IN] --> PanMask = [545579XXXXXX8735], IdPDF = [M2204553379]
+ 15:25:51,775  INFO DBIImpl:19279 - checkIdPDF --> [OUT] --> Size = [1]
+ 15:46:06,849  INFO DBIImpl:16848 - cw_INSERT_INFO_CHANGE_PIN --> [IN] --> CARDNUMBER = [545579XXXXXX8735], mobileno = [0390072501], fullname = [NGUYEN VAN DEMO]
+ 15:46:06,971  INFO DBIImpl:16851 - cw_INSERT_INFO_CHANGE_PIN --> [OUT] --> result = [202503131542374868000000031488735]
+ 15:46:07,017  INFO DBIImpl:11276 - OTP_REQUEST --> [IN] --> TransID = [202503131542374868000000031488735], PartnerID = [DOIPINTHE], PhoneNumber = [0390072501], ChannelID = [1], TransType = [1], TransType = [1], OTP = [VXTASP]
+ 15:46:07,309  WARN DatabaseController:87 - The CONNECTION_MANAGER does not contain smsscb. --> Thuc hien khoi tao ket noi
+ 15:46:08,074 ERROR DatabaseController:107 - CONNECTION_MANAGER DOES NOT CONTAIN KEY = [smsscb]. Ex: java.lang.NullPointerException
+ 15:46:08,074  INFO DatabaseController:33 - putValueToConnectionManager --> key = [smsscb], value = [true]
+ 15:46:08,074  INFO ConnectionManager:54 - ===============Hoàn tất khởi tạo kết nối: smsscb
+ 15:46:08,075  INFO ConnectionManager:55 - ===============Size: 2
+ 15:46:08,108  INFO DBIImpl:11281 - OTP_REQUEST --> [OUT] --> result = [[00, 465368]]
+ 15:46:08,127  INFO DBIImpl:1513 - insertSmsSenderLog --> [IN] --> idalert = [GW], mobile = [0390072501], message = [Ma xac thuc doi mat khau the cua khach hang qua SMS luc 15:46:08 ngay 13/03/2025 la: VXTASP]
+ 15:46:08,305  INFO DBIImpl:1516 - insertSmsSenderLog --> [OUT] --> result = [1]
+ 15:08:50,883  INFO HibernateUtil:47 - =================================================================================
+ 15:08:50,902  INFO HibernateUtil:48 - =================================================================================
+ 15:08:50,902  INFO HibernateUtil:49 - ========Khởi tạo kết nối Hibernate: ----- SMS
+ 15:08:51,909  INFO Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+ 15:08:51,944  INFO Version:54 - HHH000412: Hibernate Core {4.3.8.Final}
+ 15:08:51,957  INFO Environment:239 - HHH000206: hibernate.properties not found
+ 15:08:51,964  INFO Environment:346 - HHH000021: Bytecode provider name : javassist
+ 15:08:52,093  INFO Configuration:2133 - HHH000042: Configuring from file: smsscb.cfg.xml
+ 15:08:52,494  WARN DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+ 15:08:52,551  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/PblAutoRegContract.hbm.xml
+ 15:08:52,819  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/PblAutoReg.hbm.xml
+ 15:08:52,845  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/PblProvider.hbm.xml
+ 15:08:52,877  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/PblServicetype.hbm.xml
+ 15:08:52,889  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/PblPartnerservice.hbm.xml
+ 15:08:52,900  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/PblPartner.hbm.xml
+ 15:08:52,912  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/VwCustAccount.hbm.xml
+ 15:08:53,234  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/VwCustAccountNew.hbm.xml
+ 15:08:53,278  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/VwWaitapprove.hbm.xml
+ 15:08:53,304  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/VwWaitapproveBranch.hbm.xml
+ 15:08:53,338  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/PblBillpaid.hbm.xml
+ 15:08:53,360  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/VwAutoReg.hbm.xml
+ 15:08:53,372  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/VwUserbranch.hbm.xml
+ 15:08:53,392  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/PblEbkProcess.hbm.xml
+ 15:08:53,402  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/PblEbkScreen.hbm.xml
+ 15:08:53,412  WARN DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+ 15:08:53,415  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/PblCollated.hbm.xml
+ 15:08:53,426  WARN DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+ 15:08:53,429  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/PblLog.hbm.xml
+ 15:08:53,443  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/BPblAutoReg.hbm.xml
+ 15:08:53,503  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/BPblAutoRegContract.hbm.xml
+ 15:08:53,554  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/PblAutoRegHistory.hbm.xml
+ 15:08:53,580  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/EtsMstbranch.hbm.xml
+ 15:08:53,661  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/VwAutoregToPay.hbm.xml
+ 15:08:53,705  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/PblAutoregFail.hbm.xml
+ 15:08:53,717  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/VwMstchanneluser.hbm.xml
+ 15:08:53,719  WARN DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+ 15:08:53,722  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/PblCustTemplate.hbm.xml
+ 15:08:53,731  WARN DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+ 15:08:53,733  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/SmsPartner.hbm.xml
+ 15:08:53,742  WARN DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+ 15:08:53,745  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/SmsSender.hbm.xml
+ 15:08:53,755  WARN DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+ 15:08:53,758  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/VwSmsThuphi.hbm.xml
+ 15:08:53,777  WARN DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+ 15:08:53,779  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/SmsThuphi.hbm.xml
+ 15:08:53,790  WARN DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+ 15:08:53,793  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/InsurancePayment.hbm.xml
+ 15:08:53,831  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/SITrftToSIAuth.hbm.xml
+ 15:08:53,842  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/PFIPartner.hbm.xml
+ 15:08:53,853  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/EbIssuecard.hbm.xml
+ 15:08:53,889  WARN DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+ 15:08:53,893  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/CardType.hbm.xml
+ 15:08:53,911  WARN DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+ 15:08:53,913  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/VwMbCustomer.hbm.xml
+ 15:08:53,936  WARN DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+ 15:08:53,939  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/FeeTransactionUnlock.hbm.xml
+ 15:08:53,952  INFO Configuration:2216 - HHH000041: Configured SessionFactory: null
+ 15:08:54,670  WARN ConnectionProviderInitiator:206 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+ 15:08:54,689  WARN DriverManagerConnectionProviderImpl:93 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+ 15:08:55,937  INFO DriverManagerConnectionProviderImpl:166 - HHH000401: using driver [oracle.jdbc.driver.OracleDriver] at URL [jdbc:oracle:thin:@192.168.74.19:1521/DBEBGW19C]
+ 15:08:55,938  INFO DriverManagerConnectionProviderImpl:175 - HHH000046: Connection properties: {user=sms_scb, password=****}
+ 15:08:55,938  INFO DriverManagerConnectionProviderImpl:180 - HHH000006: Autocommit mode: false
+ 15:08:55,951  INFO DriverManagerConnectionProviderImpl:102 - HHH000115: Hibernate connection pool size: 10 (min=1)
+ 15:09:01,477  INFO Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+ 15:09:01,999  WARN RootClass:288 - HHH000038: Composite-id class does not override equals(): scb.com.vn.dbi.dto.VwWaitapproveId
+ 15:09:01,999  WARN RootClass:289 - HHH000039: Composite-id class does not override hashCode(): scb.com.vn.dbi.dto.VwWaitapproveId
+ 15:09:02,131  WARN RootClass:288 - HHH000038: Composite-id class does not override equals(): scb.com.vn.dbi.dto.VwAutoregToPayId
+ 15:09:02,132  WARN RootClass:289 - HHH000039: Composite-id class does not override hashCode(): scb.com.vn.dbi.dto.VwAutoregToPayId
+ 15:09:02,155  INFO TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+ 15:09:02,177  INFO ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+ 15:09:07,201  INFO DBIServer:25 - 3. Hoan thanh gan ket, dang lang nghe yeu cau tu may khach ...
+ 14:48:41,695  INFO HibernateUtil:47 - =================================================================================
+ 14:48:41,697  INFO HibernateUtil:48 - =================================================================================
+ 14:48:41,697  INFO HibernateUtil:49 - ========Khởi tạo kết nối Hibernate: ----- SMS
+ 14:48:42,536  INFO Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+ 14:48:42,583  INFO Version:54 - HHH000412: Hibernate Core {4.3.8.Final}
+ 14:48:42,594  INFO Environment:239 - HHH000206: hibernate.properties not found
+ 14:48:42,596  INFO Environment:346 - HHH000021: Bytecode provider name : javassist
+ 14:48:42,772  INFO Configuration:2133 - HHH000042: Configuring from file: smsscb.cfg.xml
+ 14:48:42,885  WARN DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+ 14:48:42,949  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/PblAutoRegContract.hbm.xml
+ 14:48:43,132  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/PblAutoReg.hbm.xml
+ 14:48:43,160  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/PblProvider.hbm.xml
+ 14:48:43,199  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/PblServicetype.hbm.xml
+ 14:48:43,229  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/PblPartnerservice.hbm.xml
+ 14:48:43,255  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/PblPartner.hbm.xml
+ 14:48:43,269  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/VwCustAccount.hbm.xml
+ 14:48:43,311  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/VwCustAccountNew.hbm.xml
+ 14:48:43,342  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/VwWaitapprove.hbm.xml
+ 14:48:43,367  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/VwWaitapproveBranch.hbm.xml
+ 14:48:43,404  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/PblBillpaid.hbm.xml
+ 14:48:43,424  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/VwAutoReg.hbm.xml
+ 14:48:43,437  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/VwUserbranch.hbm.xml
+ 14:48:43,456  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/PblEbkProcess.hbm.xml
+ 14:48:43,467  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/PblEbkScreen.hbm.xml
+ 14:48:43,477  WARN DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+ 14:48:43,480  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/PblCollated.hbm.xml
+ 14:48:43,499  WARN DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+ 14:48:43,502  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/PblLog.hbm.xml
+ 14:48:43,516  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/BPblAutoReg.hbm.xml
+ 14:48:43,560  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/BPblAutoRegContract.hbm.xml
+ 14:48:43,584  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/PblAutoRegHistory.hbm.xml
+ 14:48:43,602  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/EtsMstbranch.hbm.xml
+ 14:48:43,675  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/VwAutoregToPay.hbm.xml
+ 14:48:43,696  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/PblAutoregFail.hbm.xml
+ 14:48:43,732  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/VwMstchanneluser.hbm.xml
+ 14:48:43,735  WARN DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+ 14:48:43,738  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/PblCustTemplate.hbm.xml
+ 14:48:43,745  WARN DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+ 14:48:43,748  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/SmsPartner.hbm.xml
+ 14:48:43,757  WARN DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+ 14:48:43,760  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/SmsSender.hbm.xml
+ 14:48:43,786  WARN DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+ 14:48:43,790  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/VwSmsThuphi.hbm.xml
+ 14:48:43,817  WARN DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+ 14:48:43,820  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/SmsThuphi.hbm.xml
+ 14:48:43,846  WARN DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+ 14:48:43,850  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/InsurancePayment.hbm.xml
+ 14:48:43,888  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/SITrftToSIAuth.hbm.xml
+ 14:48:43,898  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/PFIPartner.hbm.xml
+ 14:48:43,904  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/EbIssuecard.hbm.xml
+ 14:48:43,924  WARN DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+ 14:48:43,928  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/CardType.hbm.xml
+ 14:48:43,936  WARN DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+ 14:48:43,938  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/VwMbCustomer.hbm.xml
+ 14:48:43,957  WARN DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+ 14:48:43,960  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/FeeTransactionUnlock.hbm.xml
+ 14:48:43,977  INFO Configuration:2216 - HHH000041: Configured SessionFactory: null
+ 14:48:44,280  WARN ConnectionProviderInitiator:206 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+ 14:48:44,303  WARN DriverManagerConnectionProviderImpl:93 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+ 14:48:44,807  INFO DriverManagerConnectionProviderImpl:166 - HHH000401: using driver [oracle.jdbc.driver.OracleDriver] at URL [jdbc:oracle:thin:@192.168.74.19:1521/DBEBGW19C]
+ 14:48:44,808  INFO DriverManagerConnectionProviderImpl:175 - HHH000046: Connection properties: {user=sms_scb, password=****}
+ 14:48:44,808  INFO DriverManagerConnectionProviderImpl:180 - HHH000006: Autocommit mode: false
+ 14:48:44,809  INFO DriverManagerConnectionProviderImpl:102 - HHH000115: Hibernate connection pool size: 10 (min=1)
+ 14:48:46,248  INFO Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+ 14:48:46,693  WARN RootClass:288 - HHH000038: Composite-id class does not override equals(): scb.com.vn.dbi.dto.VwWaitapproveId
+ 14:48:46,693  WARN RootClass:289 - HHH000039: Composite-id class does not override hashCode(): scb.com.vn.dbi.dto.VwWaitapproveId
+ 14:48:46,808  WARN RootClass:288 - HHH000038: Composite-id class does not override equals(): scb.com.vn.dbi.dto.VwAutoregToPayId
+ 14:48:46,808  WARN RootClass:289 - HHH000039: Composite-id class does not override hashCode(): scb.com.vn.dbi.dto.VwAutoregToPayId
+ 14:48:46,834  INFO TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+ 14:48:46,855  INFO ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+ 14:48:53,164  INFO DBIServer:25 - 3. Hoan thanh gan ket, dang lang nghe yeu cau tu may khach ...
+ 14:49:36,521  INFO DBIImpl:16848 - cw_INSERT_INFO_CHANGE_PIN --> [IN] --> CARDNUMBER = [545579XXXXXX8735], mobileno = [0390072501], fullname = [NGUYEN VAN DEMO]
+ 14:49:37,026  WARN DatabaseController:87 - The CONNECTION_MANAGER does not contain cwdwh. --> Thuc hien khoi tao ket noi
+ 14:49:40,905 ERROR DatabaseController:107 - CONNECTION_MANAGER DOES NOT CONTAIN KEY = [cwdwh]. Ex: java.lang.NullPointerException
+ 14:49:40,906  INFO DatabaseController:33 - putValueToConnectionManager --> key = [cwdwh], value = [true]
+ 14:49:40,906  INFO ConnectionManager:54 - ===============Hoàn tất khởi tạo kết nối: cwdwh
+ 14:49:40,906  INFO ConnectionManager:55 - ===============Size: 1
+ 14:49:42,239  INFO DBIImpl:16851 - cw_INSERT_INFO_CHANGE_PIN --> [OUT] --> result = [202503261446105718000000031488735]
+ 14:49:42,247  INFO DBIImpl:19276 - checkIdPDF --> [IN] --> PanMask = [545579XXXXXX8735], IdPDF = [M2204553379]
+ 14:49:43,330  INFO DBIImpl:19279 - checkIdPDF --> [OUT] --> Size = [1]
+ 14:56:55,677  INFO DBIImpl:16848 - cw_INSERT_INFO_CHANGE_PIN --> [IN] --> CARDNUMBER = [545579XXXXXX8735], mobileno = [0390072501], fullname = [NGUYEN VAN DEMO]
+ 14:56:56,424  INFO DBIImpl:16851 - cw_INSERT_INFO_CHANGE_PIN --> [OUT] --> result = [202503261453247068000000031488735]
+ 14:56:56,430  INFO DBIImpl:19276 - checkIdPDF --> [IN] --> PanMask = [545579XXXXXX8735], IdPDF = [M2204553379]
+ 14:56:57,520  INFO DBIImpl:19279 - checkIdPDF --> [OUT] --> Size = [1]
+ 10:15:10,114  INFO HibernateUtil:47 - =================================================================================
+ 10:15:10,130  INFO HibernateUtil:48 - =================================================================================
+ 10:15:10,131  INFO HibernateUtil:49 - ========Khởi tạo kết nối Hibernate: ----- SMS
+ 10:15:12,821  INFO Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+ 10:15:13,053  INFO Version:54 - HHH000412: Hibernate Core {4.3.8.Final}
+ 10:15:13,164  INFO Environment:239 - HHH000206: hibernate.properties not found
+ 10:15:13,168  INFO Environment:346 - HHH000021: Bytecode provider name : javassist
+ 10:15:14,096  INFO Configuration:2133 - HHH000042: Configuring from file: smsscb.cfg.xml
+ 10:15:14,662  WARN DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+ 10:15:14,831  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/PblAutoRegContract.hbm.xml
+ 10:15:15,201  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/PblAutoReg.hbm.xml
+ 10:15:15,289  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/PblProvider.hbm.xml
+ 10:15:15,370  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/PblServicetype.hbm.xml
+ 10:15:15,408  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/PblPartnerservice.hbm.xml
+ 10:15:15,451  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/PblPartner.hbm.xml
+ 10:15:15,489  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/VwCustAccount.hbm.xml
+ 10:15:15,560  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/VwCustAccountNew.hbm.xml
+ 10:15:15,619  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/VwWaitapprove.hbm.xml
+ 10:15:15,654  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/VwWaitapproveBranch.hbm.xml
+ 10:15:15,714  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/PblBillpaid.hbm.xml
+ 10:15:15,743  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/VwAutoReg.hbm.xml
+ 10:15:15,764  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/VwUserbranch.hbm.xml
+ 10:15:15,792  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/PblEbkProcess.hbm.xml
+ 10:15:15,819  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/PblEbkScreen.hbm.xml
+ 10:15:15,854  WARN DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+ 10:15:15,857  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/PblCollated.hbm.xml
+ 10:15:15,912  WARN DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+ 10:15:15,922  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/PblLog.hbm.xml
+ 10:15:15,943  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/BPblAutoReg.hbm.xml
+ 10:15:16,011  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/BPblAutoRegContract.hbm.xml
+ 10:15:16,036  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/PblAutoRegHistory.hbm.xml
+ 10:15:16,063  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/EtsMstbranch.hbm.xml
+ 10:15:16,078  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/VwAutoregToPay.hbm.xml
+ 10:15:16,099  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/PblAutoregFail.hbm.xml
+ 10:15:16,133  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/VwMstchanneluser.hbm.xml
+ 10:15:16,149  WARN DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+ 10:15:16,152  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/PblCustTemplate.hbm.xml
+ 10:15:16,182  WARN DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+ 10:15:16,184  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/SmsPartner.hbm.xml
+ 10:15:16,243  WARN DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+ 10:15:16,246  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/SmsSender.hbm.xml
+ 10:15:16,264  WARN DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+ 10:15:16,266  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/VwSmsThuphi.hbm.xml
+ 10:15:16,311  WARN DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+ 10:15:16,314  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/SmsThuphi.hbm.xml
+ 10:15:16,342  WARN DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+ 10:15:16,351  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/InsurancePayment.hbm.xml
+ 10:15:16,445  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/SITrftToSIAuth.hbm.xml
+ 10:15:16,470  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/PFIPartner.hbm.xml
+ 10:15:16,476  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/EbIssuecard.hbm.xml
+ 10:15:16,490  WARN DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+ 10:15:16,493  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/CardType.hbm.xml
+ 10:15:16,495  WARN DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+ 10:15:16,498  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/VwMbCustomer.hbm.xml
+ 10:15:16,521  WARN DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+ 10:15:16,523  INFO Configuration:759 - HHH000221: Reading mappings from resource: scb/com/vn/dbi/dto/FeeTransactionUnlock.hbm.xml
+ 10:15:16,544  INFO Configuration:2216 - HHH000041: Configured SessionFactory: null
+ 10:15:18,281  WARN ConnectionProviderInitiator:206 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+ 10:15:18,315  WARN DriverManagerConnectionProviderImpl:93 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+ 10:15:20,643  INFO DriverManagerConnectionProviderImpl:166 - HHH000401: using driver [oracle.jdbc.driver.OracleDriver] at URL [jdbc:oracle:thin:@192.168.74.19:1521/DBEBGW19C]
+ 10:15:20,644  INFO DriverManagerConnectionProviderImpl:175 - HHH000046: Connection properties: {user=sms_scb, password=****}
+ 10:15:20,644  INFO DriverManagerConnectionProviderImpl:180 - HHH000006: Autocommit mode: false
+ 10:15:20,687  INFO DriverManagerConnectionProviderImpl:102 - HHH000115: Hibernate connection pool size: 10 (min=1)
+ 10:15:24,340  INFO Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+ 10:15:24,831  WARN RootClass:288 - HHH000038: Composite-id class does not override equals(): scb.com.vn.dbi.dto.VwWaitapproveId
+ 10:15:24,832  WARN RootClass:289 - HHH000039: Composite-id class does not override hashCode(): scb.com.vn.dbi.dto.VwWaitapproveId
+ 10:15:25,006  WARN RootClass:288 - HHH000038: Composite-id class does not override equals(): scb.com.vn.dbi.dto.VwAutoregToPayId
+ 10:15:25,006  WARN RootClass:289 - HHH000039: Composite-id class does not override hashCode(): scb.com.vn.dbi.dto.VwAutoregToPayId
+ 10:15:25,048  INFO TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+ 10:15:25,128  INFO ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+ 10:15:31,386  INFO DBIServer:25 - 3. Hoan thanh gan ket, dang lang nghe yeu cau tu may khach ...
+ 10:18:39,071  INFO DBIImpl:16848 - cw_INSERT_INFO_CHANGE_PIN --> [IN] --> CARDNUMBER = [545579XXXXXX8735], mobileno = [0390072501], fullname = [NGUYEN VAN DEMO]
+ 10:18:39,188  WARN DatabaseController:87 - The CONNECTION_MANAGER does not contain cwdwh. --> Thuc hien khoi tao ket noi
+ 10:18:39,760 ERROR SetupConnection:77 - java.sql.SQLException: Unable to open a test connection to the given database. JDBC url = jdbc:oracle:thin:@192.168.49.15:3020:DW, username = ENQ. Terminating connection pool. Original Exception: ------
+java.sql.SQLRecoverableException: IO Error: Got minus one from a read call
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:419)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:536)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:228)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:521)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.jolbox.bonecp.BoneCP.obtainRawInternalConnection(BoneCP.java:256)
+	at com.jolbox.bonecp.BoneCP.<init>(BoneCP.java:305)
+	at scb.com.vn.dbi.connection.SetupConnection.getConnectionBoneCP(SetupConnection.java:74)
+	at scb.com.vn.dbi.connection.ConnectionManager.getConnection(ConnectionManager.java:47)
+	at scb.com.vn.dbi.dao.CWDwhDAO.INSERT_INFO_CHANGE_PIN(CWDwhDAO.java:436)
+	at scb.com.vn.dbi.bo.CWDwhBO.INSERT_INFO_CHANGE_PIN(CWDwhBO.java:158)
+	at scb.com.vn.dbi.controller.DBIImpl.cw_INSERT_INFO_CHANGE_PIN(DBIImpl.java:16850)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:324)
+	at sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:568)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:826)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:683)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:682)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: oracle.net.ns.NetException: Got minus one from a read call
+	at oracle.net.ns.Packet.extractData(Packet.java:424)
+	at oracle.net.ns.RefusePacket.<init>(RefusePacket.java:72)
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:347)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1054)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:308)
+	... 30 more
+------
+
+ 10:18:39,760 ERROR DatabaseController:107 - CONNECTION_MANAGER DOES NOT CONTAIN KEY = [cwdwh]. Ex: java.lang.NullPointerException
+ 10:18:39,761  INFO DatabaseController:33 - putValueToConnectionManager --> key = [cwdwh], value = [true]
+ 10:18:39,761  INFO ConnectionManager:54 - ===============Hoàn tất khởi tạo kết nối: cwdwh
+ 10:18:39,761  INFO ConnectionManager:55 - ===============Size: 1
+ 10:18:39,762 ERROR ConnectionManager:60 - java.lang.NullPointerException
+ 10:18:39,762 ERROR CWDwhDAO:446 - java.lang.Exception: java.lang.NullPointerException
+ 10:19:34,615  INFO DBIImpl:16848 - cw_INSERT_INFO_CHANGE_PIN --> [IN] --> CARDNUMBER = [545579XXXXXX8735], mobileno = [0390072501], fullname = [NGUYEN VAN DEMO]
+ 10:19:35,124 ERROR SetupConnection:77 - java.sql.SQLException: Unable to open a test connection to the given database. JDBC url = jdbc:oracle:thin:@192.168.49.15:3020:DW, username = ENQ. Terminating connection pool. Original Exception: ------
+java.sql.SQLRecoverableException: IO Error: Got minus one from a read call
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:419)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:536)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:228)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:521)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.jolbox.bonecp.BoneCP.obtainRawInternalConnection(BoneCP.java:256)
+	at com.jolbox.bonecp.BoneCP.<init>(BoneCP.java:305)
+	at scb.com.vn.dbi.connection.SetupConnection.getConnectionBoneCP(SetupConnection.java:74)
+	at scb.com.vn.dbi.connection.ConnectionManager.getConnection(ConnectionManager.java:47)
+	at scb.com.vn.dbi.dao.CWDwhDAO.INSERT_INFO_CHANGE_PIN(CWDwhDAO.java:436)
+	at scb.com.vn.dbi.bo.CWDwhBO.INSERT_INFO_CHANGE_PIN(CWDwhBO.java:158)
+	at scb.com.vn.dbi.controller.DBIImpl.cw_INSERT_INFO_CHANGE_PIN(DBIImpl.java:16850)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:324)
+	at sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:568)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:826)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:683)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:682)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: oracle.net.ns.NetException: Got minus one from a read call
+	at oracle.net.ns.Packet.extractData(Packet.java:424)
+	at oracle.net.ns.RefusePacket.<init>(RefusePacket.java:72)
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:347)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1054)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:308)
+	... 30 more
+------
+
+ 10:19:35,126  INFO ConnectionManager:52 - Does not put cwdwh to DatabaseController because it is available with value = [true]
+ 10:19:35,127  INFO ConnectionManager:54 - ===============Hoàn tất khởi tạo kết nối: cwdwh
+ 10:19:35,127  INFO ConnectionManager:55 - ===============Size: 1
+ 10:19:35,127 ERROR ConnectionManager:60 - java.lang.NullPointerException
+ 10:19:35,128 ERROR CWDwhDAO:446 - java.lang.Exception: java.lang.NullPointerException
+ 

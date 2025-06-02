@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 22, 2013 4:15:41 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="scb.com.vn.dbi.dto.BPblAutoRegContract" table="B_PBL_AUTO_REG_CONTRACT" schema="SMS_SCB">
+        <id name="idcontract" type="string">
+            <column name="IDCONTRACT" length="8" />
+            <generator class="assigned" />
+        </id>
+        <property name="custAccCif" type="string">
+            <column name="CUST_ACC_CIF" length="30" not-null="true" />
+        </property>
+        <property name="custAccNo" type="string">
+            <column name="CUST_ACC_NO" length="30" not-null="true" />
+        </property>
+        <property name="custAccName" type="string">
+            <column name="CUST_ACC_NAME" length="150" not-null="true" />
+        </property>
+        <property name="custAccAddress" type="string">
+            <column name="CUST_ACC_ADDRESS" length="200" />
+        </property>
+        <property name="custAccIdcard" type="string">
+            <column name="CUST_ACC_IDCARD" length="50" />
+        </property>
+        <property name="custAccIdcardLoc" type="string">
+            <column name="CUST_ACC_IDCARD_LOC" length="100" />
+        </property>
+        <property name="custAccIdcardDob" type="string">
+            <column name="CUST_ACC_IDCARD_DOB" length="30" />
+        </property>
+        <property name="havesms" type="char">
+            <column name="HAVESMS" length="1" not-null="true">
+                <comment>Y; N</comment>
+            </column>
+        </property>
+        <property name="mobile" type="string">
+            <column name="MOBILE" length="20" />
+        </property>
+        <property name="active" type="char">
+            <column name="ACTIVE" length="1" not-null="true" />
+        </property>
+        <property name="datcreated" type="timestamp">
+            <column name="DATCREATED" length="19" not-null="true" />
+        </property>
+        <property name="makerid" type="string">
+            <column name="MAKERID" length="20" />
+        </property>
+        <property name="branchcode" type="string">
+            <column name="BRANCHCODE" length="3">
+                <comment>branchcode maker. Luu tru branchcode goc</comment>
+            </column>
+        </property>
+        
+        <property name="checkerid" type="string">
+            <column name="CHECKERID" length="20" />
+        </property>
+        <property name="datautheq" type="timestamp">
+            <column name="DATAUTHEQ" length="19" />
+        </property>
+        <property name="makeridModify" type="string">
+            <column name="MAKERID_MODIFY" length="20">
+                <comment>modify</comment>
+            </column>
+        </property>
+        <property name="makeridModifyBrncode" type="string">
+            <column name="MAKERID_MODIFY_BRNCODE" length="3">
+                <comment>modify</comment>
+            </column>
+        </property>
+        <property name="makeridModifyDatcreated" type="timestamp">
+            <column name="MAKERID_MODIFY_DATCREATED" length="19">
+                <comment>modify</comment>
+            </column>
+        </property>
+        <property name="checkeridModify" type="string">
+            <column name="CHECKERID_MODIFY" length="20">
+                <comment>modify</comment>
+            </column>
+        </property>
+        <property name="checkeridModifyDatcreate" type="timestamp">
+            <column name="CHECKERID_MODIFY_DATCREATE" length="19">
+                <comment>modify</comment>
+            </column>
+        </property>
+        <property name="lastsendsms" type="timestamp">
+            <column name="LASTSENDSMS" length="19" />
+        </property>
+        <property name="isapproved" type="java.lang.Character">
+            <column name="ISAPPROVED" length="1">
+                <comment>A:Duyet; D: deny; W: cho duyet</comment>
+            </column>
+        </property>
+        <set name="BPblAutoRegs" inverse="true" lazy="false">
+            <key>
+                <column name="IDCONTRACT" length="8" not-null="false" />
+            </key>
+            <one-to-many class="scb.com.vn.dbi.dto.BPblAutoReg" />
+        </set>
+    </class>
+</hibernate-mapping>

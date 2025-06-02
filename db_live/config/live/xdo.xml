@@ -1,0 +1,27 @@
+<config version="1.0.0" xmlns="http://xmlns.oracle.com/oxp/config/">
+    <properties>
+        <property name="system-temp-dir">/u01/source/gateway/dbibank/scb/pdf/tmp</property>
+        <property name="system-cache-page-size">50</property>
+        <property name="pdf-replace-smart-quotes">false</property>
+        <!--<property name="fo-chunk-size">20000</property>-->
+    </properties>
+
+    <!-- Font setting -->
+    <fonts>
+        <font family="Times New Roman" style="normal" weight="normal">
+            <truetype path="/u01/source/gateway/dbibank/scb/fonts/times.ttf" />
+        </font>
+        <font family="Times New Roman" style="normal" weight="bold">
+            <truetype path="/u01/source/gateway/dbibank/scb/fonts/timesbd.ttf" />
+        </font>
+        <font family="Times New Roman" style="italic" weight="normal">
+            <truetype path="/u01/source/gateway/dbibank/scb/fonts/timesi.ttf" />
+        </font>
+        <font family="Times New Roman" style="italic" weight="bold">
+            <truetype path="/u01/source/gateway/dbibank/scb/fonts/timesbi.ttf" />
+        </font>
+        <font family="Wingdings" style="normal" weight="normal">
+            <truetype path="/u01/source/gateway/dbibank/scb/fonts/wingding.ttf" />
+        </font>
+    </fonts>
+</config>

@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 22, 2013 6:09:50 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="scb.com.vn.dbi.dto.BPblAutoReg" table="B_PBL_AUTO_REG" schema="SMS_SCB">
+        <id name="id" type="int">
+            <column name="ID" precision="9" scale="0" />
+            <generator class="sequence">                
+                <param name="sequence">SQ_PBL_AUTO_REG</param>
+            </generator>
+        </id>
+        <many-to-one name="BPblAutoRegContract" class="scb.com.vn.dbi.dto.BPblAutoRegContract" fetch="select">
+            <column name="IDCONTRACT" length="8" not-null="true" />
+        </many-to-one>
+        <many-to-one name="pblServicetype" class="scb.com.vn.dbi.dto.PblServicetype" fetch="select">
+            <column name="IDSERVICETYPE" length="10" not-null="true" />
+        </many-to-one>
+        <many-to-one name="pblProvider" class="scb.com.vn.dbi.dto.PblProvider" fetch="select">
+            <column name="IDPROVIDER" length="20" not-null="true" />
+        </many-to-one>
+        <property name="customercode" type="string">
+            <column name="CUSTOMERCODE" length="30" not-null="true" />
+        </property>
+        <property name="status" type="char">
+            <column name="STATUS" length="1" not-null="true">
+                <comment>'I':Inactive; A: ACTIVE</comment>
+            </column>
+        </property>
+        <property name="validdate" type="date">
+            <column name="VALIDDATE" length="7" not-null="true" />
+        </property>
+        <property name="expiredate" type="date">
+            <column name="EXPIREDATE" length="7" />
+        </property>
+        <property name="scheduletype" type="boolean">
+            <column name="SCHEDULETYPE" precision="1" scale="0" not-null="true">
+                <comment>0: Hang ngay; 1: Chon ngay co dinh trong thang; 2: Chon nhung ngay trong thang.</comment>
+            </column>
+        </property>
+        <property name="daysinmonth" type="string">
+            <column name="DAYSINMONTH" length="150">
+                <comment>VD: 1;3;4;6;7;9;12;31</comment>
+            </column>
+        </property>
+        <property name="paymenttype" type="char">
+            <column name="PAYMENT_TYPE" length="1"/>
+        </property>
+    </class>
+</hibernate-mapping>

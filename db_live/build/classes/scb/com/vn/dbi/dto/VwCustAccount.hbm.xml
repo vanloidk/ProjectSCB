@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Dec 27, 2012 5:26:35 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="scb.com.vn.dbi.dto.VwCustAccount" table="VW_CUST_ACCOUNT" mutable="true">
+        <id name="custNo" type="string">
+            <column length="20" name="CUST_NO" />
+            <generator class="assigned" />
+        </id>
+        <property name="branchCode" type="string">
+            <column length="3" name="BRANCH_CODE" />
+        </property>
+        <property name="custAcNo" type="string">
+            <column length="20" name="CUST_AC_NO" />
+        </property>
+        <property name="acDesc" type="string">
+            <column length="105" name="AC_DESC" />
+        </property>
+        <property name="ccy" type="string">
+            <column length="3" name="CCY" />
+        </property>
+        <property name="accountClass" type="string">
+            <column length="6" name="ACCOUNT_CLASS" />
+        </property>
+        <property name="acOpenDate" type="date">
+            <column length="7" name="AC_OPEN_DATE" />
+        </property>
+        <property name="altAcNo" type="string">
+            <column length="20" name="ALT_AC_NO" />
+        </property>
+        <property name="recordStat" type="java.lang.Character">
+            <column length="1" name="RECORD_STAT" />
+        </property>
+        <property name="authStat" type="java.lang.Character">
+            <column length="1" name="AUTH_STAT" />
+        </property>
+        <property name="makerId" type="string">
+            <column length="12" name="MAKER_ID" />
+        </property>
+        <property name="makerDtStamp" type="date">
+            <column length="7" name="MAKER_DT_STAMP" />
+        </property>
+        <property name="checkerId" type="string">
+            <column length="12" name="CHECKER_ID" />
+        </property>
+        <property name="checkerDtStamp" type="date">
+            <column length="7" name="CHECKER_DT_STAMP" />
+        </property>
+        <property name="onceAuth" type="java.lang.Character">
+            <column length="1" name="ONCE_AUTH" />
+        </property>
+        <property name="limitCcy" type="string">
+            <column length="3" name="LIMIT_CCY" />
+        </property>
+        <property name="offlineLimit" type="big_decimal">
+            <column default="0" name="OFFLINE_LIMIT" not-null="false"
+                                precision="22" scale="3" />
+        </property>
+        <property name="casAccount" type="java.lang.Character">
+            <column length="1" name="CAS_ACCOUNT" />
+        </property>
+        <property name="acyOpeningBal" type="big_decimal">
+            <column name="ACY_OPENING_BAL" precision="22" scale="0" />
+        </property>
+        <property name="lcyOpeningBal" type="big_decimal">
+            <column name="LCY_OPENING_BAL" precision="22" scale="0" />
+        </property>
+        <property name="acyCurrBalance" type="big_decimal">
+            <column name="ACY_CURR_BALANCE" precision="22" scale="0" />
+        </property>
+        <property name="lcyCurrBalance" type="big_decimal">
+            <column name="LCY_CURR_BALANCE" precision="22" scale="0" />
+        </property>
+        <property name="acyBlockedAmount" type="big_decimal">
+            <column name="ACY_BLOCKED_AMOUNT" precision="22" scale="0" />
+        </property>
+        <property name="acyAvlBal" type="big_decimal">
+            <column name="ACY_AVL_BAL" precision="22" scale="0" />
+        </property>
+        <property name="dateLastCrActivity" type="date">
+            <column length="7" name="DATE_LAST_CR_ACTIVITY" />
+        </property>
+        <property name="dateLastDrActivity" type="date">
+            <column length="7" name="DATE_LAST_DR_ACTIVITY" />
+        </property>
+        <property name="dateLastDr" type="date">
+            <column length="7" name="DATE_LAST_DR" />
+        </property>
+        <property name="dateLastCr" type="date">
+            <column length="7" name="DATE_LAST_CR" />
+        </property>        
+        <property name="fullName" type="string">
+            <column name="FULL_NAME" length="105" />
+        </property>
+        <property name="idcard" type="string">
+            <column name="IDCARD" length="50" />
+        </property>
+        <property name="idcardLoc" type="string">
+            <column name="IDCARD_LOC" length="150" />
+        </property>
+        <property name="idcardDob" type="string">
+            <column name="IDCARD_DOB" length="150" />
+        </property>
+        <property name="address" type="string">
+            <column name="ADDRESS" length="105" />
+        </property>
+        <property name="customerType" type="java.lang.Character">
+            <column name="CUSTOMER_TYPE" length="1" />
+        </property>        
+    </class>
+</hibernate-mapping>
