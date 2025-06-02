@@ -1,0 +1,15 @@
+#visaUrl=https://sandbox.api.visa.com/
+visaUrl=https://cert.api.visa.com/
+#visaUrl=https://cert.api.visa.com/
+#userId=X7ZCINGW9EMJUBXYWZKE21Bl-yBiyiLr1JlMAsi1e5FP9z1pA
+#password=5H01Tu8CpOeZN
+userId=95QQIWLI9JIN2QUL2IEN21JqUWYg18bCZXKbUQgvWr7wGNk7M
+password=6OqqFoC
+#keyStorePath=D:\\EBANKING\\SOURCE_CODE\\Visa\\src\\security\\clientkeystore.jks
+keyStorePath=D:\\Minh Nguyen\\Software\\eclipse-jee-mars-2-win32-x86_64\\workspace\\Visa\\src\\security\\clientkeystore.jks
+keyStorePassword=abcd1234
+#privateKeyPassword=123456
+privateKeyPassword=abcd1234
+log4j=D:\\EBANKING\\SOURCE_CODE\\Visa\\src\\test\\resources\\log4j.properties
+host=
+port=
